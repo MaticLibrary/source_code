@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import com.example.settings.IntegerSettingTextField?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:id="parent"
+          fx:controller="com.example.controller.settings.PrivateBftSettingsController" id="root">
+
+    <stylesheets>
+        <URL value="@/css/algorithmSettings.css"/>
+    </stylesheets>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Maks. zdrajców (f)" fx:id="fLabel" id="label"/>
+    <IntegerSettingTextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="f" GridPane.hgrow="ALWAYS"/>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Limit czasu" fx:id="timeoutLabel" id="label"/>
+    <IntegerSettingTextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="timeout" GridPane.hgrow="ALWAYS"/>
+
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Maks. rund" fx:id="roundsLabel" id="label"/>
+    <IntegerSettingTextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="maxRounds" GridPane.hgrow="ALWAYS"/>
+</GridPane>

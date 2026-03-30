@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.example.settings.IntegerSettingTextField?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controller.graphGeneratorSettings.PlanarGraphSettingsController">
+
+    <VBox spacing="5" fx:id="container">
+        <Label text="Szerokość siatki" id="label"/>
+        <IntegerSettingTextField fx:id="width" id="field"/>
+        <Slider fx:id="widthSlider" id="slider"
+                blockIncrement="1.0"
+                cache="true"
+                majorTickUnit="5.0"
+                max="10.0"
+                min="0.0"
+                minorTickCount="4"
+                showTickLabels="true"
+                showTickMarks="true"
+                snapToTicks="true"
+                value="5.0"/>
+        <Label text="Wysokość siatki" id="label"/>
+        <IntegerSettingTextField fx:id="height" id="field"/>
+        <Slider fx:id="heightSlider" id="slider"
+                blockIncrement="1.0"
+                cache="true"
+                majorTickUnit="5.0"
+                max="10.0"
+                min="0.0"
+                minorTickCount="4"
+                showTickLabels="true"
+                showTickMarks="true"
+                snapToTicks="true"
+                value="5.0"/>
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,12 @@
+#label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #CFE4FF;
+    -fx-padding: 0 0 6 0;
+}
+
+#toggle {
+    -fx-font-size: 12px;
+    -fx-padding: 4 0 0 0;
+    -fx-alignment: left;
+}

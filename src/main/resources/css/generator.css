@@ -1,0 +1,18 @@
+#label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #CFE4FF;
+    -fx-padding: 4 0 2 0;
+}
+
+#slider {
+    -fx-padding: 4 0 0 0;
+    -fx-pref-width: 280;
+}
+
+#combo_box {
+    -fx-pref-width: 280;
+}
+
+#field {
+    -fx-pref-width: 280;
+}

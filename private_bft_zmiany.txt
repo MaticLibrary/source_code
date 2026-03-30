@@ -1,0 +1,141 @@
+Dokumentacja zmian - PrivateRulesBftAlgorithm
+Data: 2026-03-30
+
+1. Cel zmian
+
+Stara wersja algorytmu laczyla dwie rozne rzeczy:
+- decyzje globalna,
+- prywatna regule wezla.
+
+W praktyce prywatna regula mogla dawac alarmy nawet wtedy, gdy komunikacja dzialala poprawnie,
+a sam model pozwalal uczciwym wezlom wzmacniac wiadomosci, ktore nie musialy pochodzic od lidera.
+
+Nowa wersja rozdziela te odpowiedzialnosci:
+- decyzja koncowa wynika z certyfikatu quorum,
+- reguly prywatne sluza tylko do monitorowania jakosci dowodu i generowania alarmu.
+
+
+2. Najwazniejsze zmiany w logice algorytmu
+
+2.1. Decyzja oparta na quorum
+
+W poprzedniej wersji decyzja byla liczona glownie przez porownanie n0 i n1.
+W nowej wersji decyzja zapada dopiero wtedy, gdy dla wartosci 0 albo 1 zostanie zebrane quorum:
+
+quorum = n - f
+
+Jesli nie ma quorum, uczciwy wezel nie zmienia swojej opinii w tej rundzie.
+
+2.2. Uczciwy wezel podpisuje najwyzej jedna wartosc w rundzie
+
+Dodano stan echoedValue w NodeState.
+To oznacza, ze lojalny wezel nie moze juz podpisac jednoczesnie 0 i 1 w tej samej rundzie.
+To byla jedna z najwazniejszych wad starej wersji.
+
+2.3. ECHO musi byc powiazane z liderem
+
+Nowa walidacja wiadomosci wymaga, aby:
+- PROPOSAL mial tylko podpis lidera,
+- ECHO zawieralo slad podpisu lidera,
+- ECHO zawieralo tez podpis nadawcy tej wiadomosci.
+
+Dzieki temu uczciwe wezly nie wzmacniaja juz dowolnych wiadomosci zdrajcy bez dowodu pochodzenia od lidera.
+
+2.4. Wykrywanie sprzecznych wiadomosci lidera
+
+Dodano:
+- observedLeaderValue
+- leaderConflict
+
+Jesli wezel zobaczy podpis lidera dla 0 i dla 1 w tej samej rundzie,
+to traktuje to jako konflikt lidera.
+W takiej sytuacji decyzja nie jest podejmowana na tej podstawie.
+
+2.5. Brak decyzji nie wymusza sztucznego wyboru
+
+W starej wersji przy braku wystarczajacego dowodu i tak byla wybierana wartosc.
+W nowej wersji:
+- jesli nie ma quorum,
+- albo sa sprzeczne certyfikaty,
+- albo lider jest niespojny,
+to uczciwy wezel zachowuje poprzednia opinie i algorytm przechodzi do kolejnej rundy.
+
+
+3. Zmiana znaczenia regul prywatnych
+
+Prywatne reguly nie sa juz alternatywnymi algorytmami decyzji.
+Nie nadpisuja wyniku protokolu.
+Teraz sa prywatnymi politykami alarmowymi.
+
+Obecnie dostepne reguly:
+- CERTIFIED_QUORUM
+- CERTIFIED_WITH_LEADER
+- CLEAR_MARGIN
+- LOW_TURNOUT_GUARD
+- CONFLICT_GUARD
+- EQUIVOCATION_GUARD
+
+Ich zadaniem jest odpowiedziec na pytanie:
+"czy dowod z tej rundy jest wystarczajaco mocny i czy nie ma oznak niespojnosci?"
+
+To sprawia, ze alarm ma teraz znaczenie diagnostyczne,
+a nie jest skutkiem arbitralnej roznicy miedzy dwiema przypadkowymi strategiami glosowania.
+
+
+4. Zmiany w raportowaniu i UI
+
+Dodano nowe informacje do raportu:
+- quorum
+- decyzje (ilu lojalnych uczestnikow podjelo decyzje)
+- konflikty_lidera
+
+Opis algorytmu w InformationEngine zostal zmieniony tak,
+aby odpowiadal nowej semantyce:
+- SEND: podpisana propozycja lidera i pojedyncze ECHO od uczciwego wezla,
+- CHOOSE: decyzja tylko po zebraniu certyfikatu quorum, a prywatne reguly pelnia role monitorujaca.
+
+
+5. Zmiany w testach
+
+Test jednostkowy zostal poprawiony:
+- timeout ustawiono na 2,
+- test sprawdza nie tylko zakonczenie algorytmu,
+- ale tez osiagniecie konsensusu.
+
+To lepiej odpowiada temu, co chcemy teraz zweryfikowac.
+
+
+6. Co zostalo sprawdzone ponownie
+
+Po zmianach wykonano ponowna weryfikacje projektu.
+Uruchomiono:
+- pojedynczy test: PrivateRulesBftAlgorithmTest
+- pelny zestaw testow: gradlew test
+
+Wynik:
+- wszystkie testy przeszly poprawnie przy uruchomieniu na JDK 17
+
+
+7. Wazne zalozenie tej wersji
+
+Ta wersja nadal zaklada logiczna komunikacje all-to-all.
+W praktyce oznacza to, ze algorytm zachowuje sie jak protokol dla pelnej sieci komunikacyjnej,
+nawet jesli narysowany graf nie jest pelny.
+
+Wniosek praktyczny:
+- dla tej wersji najlepiej uzywac grafu pelnego,
+- albo traktowac krawedzie jako warstwe wizualna, a nie ograniczenie komunikacji.
+
+
+8. Efekt koncowy
+
+Po zmianach algorytm jest bardziej spojny i sensowniejszy z punktu widzenia BFT:
+- decyzja zalezy od dowodu w postaci podpisow,
+- uczciwy wezel nie podpisuje dwoch sprzecznych wartosci,
+- alarm oznacza problem z jakoscia dowodu albo niespojnoscia lidera,
+- brak dowodu nie wymusza sztucznej decyzji.
+
+Najkrotsze podsumowanie:
+z modelu "wiekszosc + przypadkowe prywatne reguly"
+algorytm zostal przerobiony na
+"podpisany broadcast lidera + quorum certificate + prywatne monitorowanie alarmow".

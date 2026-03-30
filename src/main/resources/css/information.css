@@ -1,0 +1,20 @@
+#key {
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-fill: #F2F6FF;
+}
+
+#phase {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#scrollPane {
+    -fx-background-color: transparent;
+}
+
+#border {
+    -fx-border-style: solid none none none;
+    -fx-border-color: rgba(255,255,255,0.08);
+    -fx-padding: 16 0 0 0;
+}

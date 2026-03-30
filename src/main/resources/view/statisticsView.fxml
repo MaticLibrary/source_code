@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.StatisticsController" spacing="10"
+      styleClass="panel-padding">
+    <LineChart fx:id="opinionChart"
+               prefHeight="300.0" prefWidth="600.0" title="Opinie">
+        <xAxis>
+            <NumberAxis side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </LineChart>
+    <VBox spacing="8" styleClass="glass-subpanel">
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Label text="Pasek czasu" styleClass="section-label"/>
+            <Label fx:id="timelineValueLabel" text="Krok: 0" styleClass="hint-text"/>
+        </HBox>
+        <Slider fx:id="timelineSlider" min="0" max="1" value="0" blockIncrement="1" majorTickUnit="1" showTickLabels="false"/>
+        <HBox spacing="16" alignment="CENTER_LEFT">
+            <Label text="Atak" styleClass="section-label"/>
+            <Label fx:id="supportCountLabel" text="0 (0%)" styleClass="status-text"/>
+            <Label text="Odwrót" styleClass="section-label"/>
+            <Label fx:id="opposeCountLabel" text="0 (0%)" styleClass="status-text"/>
+        </HBox>
+        <Label text="Ostatnia operacja" styleClass="section-label"/>
+        <Label fx:id="lastOperationLabel" text="-" wrapText="true" styleClass="status-text"/>
+    </VBox>
+    <FlowPane alignment="BOTTOM_RIGHT">
+        <Button fx:id="exportButton">Eksportuj do CSV</Button>
+    </FlowPane>
+</VBox>
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="Algorytm PBFT" styleClass="docs-page-title"/>
+    <Label text="Uproszczony, losowy model do wizualizacji PBFT." styleClass="docs-page-lead"/>
+    <TextArea editable="false" prefHeight="320.0" prefWidth="360.0" wrapText="true"
+              styleClass="docs-text"
+              text="Uwaga: to model symulacyjny, nie pełny protokół PBFT.
+
+Krok:
+1) Losujemy głosującego.
+2) Pyta q sąsiadów o opinie.
+3) Zgodne opinie → decyzja deterministyczna.
+4) Konflikt → decyzja losowa z prawdopodobieństwem p.
+
+Parametry:
+- q: liczba sąsiadów do zapytania.
+- limit czasu: po ilu krokach kończymy.
+- p: szansa rozstrzygnięcia remisu.
+
+Kiedy wybrać:
+Gdy chcesz szybkie, probabilistyczne dochodzenie do zgody."/>
+</VBox>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controller.GenerateVerticesController"
+            prefWidth="300" styleClass="glass-panel panel-padding">
+
+    <stylesheets>
+        <URL value="@/css/theme.css"/>
+        <URL value="@/css/generator.css"/>
+    </stylesheets>
+
+    <content>
+        <VBox spacing="8">
+            <Label text="Ustal procentowy rozkład" id="label"/>
+            <Slider fx:id="distributionSlider" showTickLabels="true" id="slider"/>
+        </VBox>
+    </content>
+
+    <ButtonType text="Anuluj" buttonData="CANCEL_CLOSE"/>
+    <ButtonType text="OK" buttonData="OK_DONE"/>
+</DialogPane>

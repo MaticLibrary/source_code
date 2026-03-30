@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<Menu xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.SimulationMenuController"
+      text="Symulacja">
+
+    <MenuItem text="Tryb symulacji" fx:id="simulateItem" onAction="#changeApplicationState"/>
+    <MenuItem text="Uruchom" fx:id="startItem"/>
+    <MenuItem text="Następny krok" fx:id="nextStepItem"/>
+    <MenuItem text="Na żywo" fx:id="liveItem"/>
+    <MenuItem text="Do końca" fx:id="instantFinishItem"/>
+    <MenuItem text="Pauza" fx:id="pauseItem"/>
+    <MenuItem text="Zatrzymaj" fx:id="stopItem"/>
+    <MenuItem text="Tryb zdrajców" fx:id="traitorSettings"/>
+</Menu>

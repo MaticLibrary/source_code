@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="Symulacja — szybki start" styleClass="docs-page-title"/>
+    <Label text="Jak uruchomić symulację i gdzie znaleźć wyniki." styleClass="docs-page-lead"/>
+    <TextArea editable="false" prefHeight="320.0" prefWidth="360.0" wrapText="true"
+              styleClass="docs-text"
+              text="Start:
+1) Ustaw liczbę agentów i zdrajców.
+2) Wybierz algorytm i parametry.
+3) Kliknij „Symuluj”.
+
+Sterowanie przebiegiem (menu Symulacja):
+- Uruchom / Następny krok / Na żywo / Do końca / Pauza / Zatrzymaj.
+
+Animacje:
+- Suwak ustawia prędkość.
+- „Omiń animacje” wykonuje krok bez animacji.
+
+Wyniki:
+- Statystyki: wykres opinii i pasek czasu.
+- Dziennik: lista zdarzeń.
+- Po zakończeniu pojawia się okno z informacją o konsensusie."/>
+</VBox>

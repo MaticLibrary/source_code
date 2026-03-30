@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="BFT z regułami prywatnymi" styleClass="docs-page-title"/>
+    <Label text="Podpisy cyfrowe + prywatne reguły węzłów." styleClass="docs-page-lead"/>
+    <TextArea editable="false" prefHeight="320.0" prefWidth="360.0" wrapText="true"
+              styleClass="docs-text"
+              text="Warunek: N ≥ 2f + 1.
+
+Runda:
+1) Lider wysyła PROPOSAL z podpisem.
+2) Węzły weryfikują podpisy i rozsyłają ECHO.
+3) Po timeout liczą unikalne podpisy dla 0 i 1.
+4) Decyzja globalna = większość (lub lider przy remisie).
+5) Reguła prywatna sprawdza spójność; rozbieżność → ALARM.
+
+Podpisy: każdy podpisuje (round, value), weryfikacja jest niezależna.
+
+Kiedy wybrać:
+Gdy chcesz pokazać znaczenie podpisów i prywatnych reguł."/>
+</VBox>

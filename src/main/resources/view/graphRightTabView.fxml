@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.GraphLayoutController"
+      styleClass="glass-panel" spacing="8">
+
+    <padding>
+        <Insets top="10" right="10" left="10" bottom="10"/>
+    </padding>
+
+    <Slider fx:id="zoom"
+            showTickLabels="true"
+            min="-5.0"
+            max="5.0"
+            value="1.0"
+            orientation="VERTICAL"
+            showTickMarks="true"
+            majorTickUnit="1.0"
+            minorTickCount="1"
+            blockIncrement="0.125"
+            snapToTicks="true"/>
+    <Label text="Przybliżenie"/>
+</VBox>

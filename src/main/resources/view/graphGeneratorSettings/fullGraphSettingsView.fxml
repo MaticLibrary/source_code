@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.example.settings.IntegerSettingTextField?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controller.graphGeneratorSettings.FullGraphSettingsController">
+
+    <VBox spacing="5" fx:id="container">
+        <Label text="Wybierz liczbę wierzchołków" id="label"/>
+        <IntegerSettingTextField fx:id="vertices" id="field"/>
+        <Slider fx:id="verticesSlider" id="slider"
+                blockIncrement="1.0"
+                cache="true"
+                majorTickUnit="5.0"
+                max="30.0"
+                min="0.0"
+                minorTickCount="4"
+                showTickLabels="true"
+                showTickMarks="true"
+                snapToTicks="true"
+                value="5.0"/>
+    </VBox>
+
+</AnchorPane>

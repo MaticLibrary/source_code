@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.GraphEditController"
+      styleClass="glass-toolbar" spacing="8" alignment="CENTER_LEFT">
+
+    <ToggleButton text="Symulacja" fx:id="simulateButton"/>
+    <Separator orientation="VERTICAL"/>
+
+    <Button text="Wierzchołek" fx:id="vertexButton"/>
+    <Button text="Krawędź" fx:id="edgeButton"/>
+    <Button text="Usuń" fx:id="deleteButton"/>
+    <Button text="Brak" fx:id="noneButton"/>
+    <Button text="Cofnij" fx:id="undoButton"/>
+    <Button text="Ponów" fx:id="redoButton"/>
+
+    <Separator orientation="VERTICAL"/>
+
+    <Button text="Uruchom" fx:id="startButton"/>
+    <Button text="Następny krok" fx:id="nextStepButton"/>
+    <Button text="Na żywo" fx:id="liveButton"/>
+    <Button text="Do końca" fx:id="instantFinishButton"/>
+    <Button text="Pauza" fx:id="pauseButton"/>
+    <Button text="Zatrzymaj" fx:id="stopButton"/>
+
+    <Separator orientation="VERTICAL"/>
+
+    <Button fx:id="traitorSettings" text="Tryb zdrajców"/>
+</HBox>

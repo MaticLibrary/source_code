@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="Algorytm Króla" styleClass="docs-page-title"/>
+    <Label text="Fazowy algorytm z królem, odporny na t zdrajców." styleClass="docs-page-lead"/>
+    <TextArea editable="false" prefHeight="320.0" prefWidth="360.0" wrapText="true"
+              styleClass="docs-text"
+              text="Warunek: N ≥ 4t + 1. Liczba faz: t + 1.
+
+Faza ma 2 rundy:
+R1: wszyscy wymieniają opinie i liczą lokalną większość.
+R2: król rozsyła swoją opinię.
+
+Reguła decyzji:
+- jeśli większość jest silna (≥ n/2 + t), zostajesz przy niej,
+- jeśli jest słaba, przyjmujesz opinię króla.
+
+W tej symulacji parametr „Faza” ustawia, ile rund wykonujemy w kroku.
+
+Kiedy wybrać:
+Gdy chcesz stabilność mimo konfliktów i prostą regułę korekty."/>
+</VBox>

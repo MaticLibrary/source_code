@@ -1,0 +1,11 @@
+#info_1 {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-fill: #EAF3FF;
+    -fx-padding: 4 0 0 0;
+}
+
+#info_2 {
+    -fx-font-size: 13px;
+    -fx-padding: 4 0 0 0;
+}

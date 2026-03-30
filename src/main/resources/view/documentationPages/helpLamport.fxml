@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="Algorytm Lamporta (OM(m))" styleClass="docs-page-title"/>
+    <Label text="Deterministyczny konsensus przy N ≥ 3t + 1." styleClass="docs-page-lead"/>
+    <TextArea editable="false" prefHeight="320.0" prefWidth="360.0" wrapText="true"
+              styleClass="docs-text"
+              text="Cel: uzgodnić bit 0/1 mimo t zdrajców.
+
+Jak działa:
+1) Dowódca wysyła wartość do poruczników.
+2) Porucznicy przekazują wartość dalej w m rundach OM(m-1).
+3) Każdy węzeł buduje tabelę wiedzy i wybiera większość.
+
+W tej symulacji:
+- Wysyłanie = animowane przekazy wartości.
+- Decyzja = zmiana opinii/koloru węzła.
+
+Kiedy wybrać:
+Gdy zależy Ci na klasycznym, deterministycznym przebiegu i pełnej propagacji."/>
+</VBox>

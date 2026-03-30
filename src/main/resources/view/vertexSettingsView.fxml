@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import org.controlsfx.control.ToggleSwitch?>
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.VertexSettingsController" styleClass="glass-panel panel-padding">
+
+    <stylesheets>
+        <URL value="@/css/vertexSettings.css"/>
+    </stylesheets>
+
+    <Label text = "Ustawienia agenta" id="label"/>
+
+    <ToggleSwitch fx:id = "traitorSwitch" text="Zdrajca" id="toggle"/>
+    <ToggleSwitch fx:id = "opinionSwitch" text="Opinia (atak)" id="toggle"/>
+
+</VBox>

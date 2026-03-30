@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<BorderPane fx:id="root" styleClass="app-root" minHeight="700.0" minWidth="1100.0"
+            xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.controller.AppController">
+
+    <stylesheets>
+        <URL value="@/css/theme.css"/>
+    </stylesheets>
+
+    <top>
+        <fx:include fx:id="menu" source="mainMenuView.fxml"/>
+    </top>
+
+    <center>
+        <SplitPane orientation="HORIZONTAL" dividerPositions="0.70" styleClass="main-split">
+            <AnchorPane>
+                <fx:include fx:id="graph" source="graphView.fxml"
+                            AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0"
+                            AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"/>
+            </AnchorPane>
+            <VBox prefWidth="380" styleClass="side-panel">
+                <TabPane tabClosingPolicy="UNAVAILABLE" styleClass="side-tabs" VBox.vgrow="ALWAYS">
+                    <Tab text="Symulacja">
+                        <content>
+                            <ScrollPane fitToWidth="true" fitToHeight="true" styleClass="side-scroll">
+                                <content>
+                                    <fx:include fx:id="simulation" source="simulationOptionsView.fxml"/>
+                                </content>
+                            </ScrollPane>
+                        </content>
+                    </Tab>
+                    <Tab text="Widok">
+                        <content>
+                            <fx:include source="graphRightTabView.fxml"/>
+                        </content>
+                    </Tab>
+                </TabPane>
+            </VBox>
+        </SplitPane>
+    </center>
+
+    <bottom>
+        <VBox styleClass="bottom-panel" prefHeight="260">
+            <fx:include source="grapthBottomTabView.fxml"/>
+            <TabPane tabClosingPolicy="UNAVAILABLE" styleClass="bottom-tabs" prefHeight="220">
+                <Tab text="Statystyki">
+                    <content>
+                        <fx:include fx:id="stats" source="statisticsView.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Legenda">
+                    <content>
+                        <fx:include fx:id="legend" source="legendView.fxml"/>
+                    </content>
+                </Tab>
+                <Tab text="Dziennik">
+                    <content>
+                        <fx:include fx:id="logger" source="loggerView.fxml"/>
+                    </content>
+                </Tab>
+            </TabPane>
+        </VBox>
+    </bottom>
+
+</BorderPane>

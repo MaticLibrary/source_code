@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ButtonType?>
+<?import java.net.URL?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controller.SimulationResultController"
+            prefHeight="120.0" prefWidth="260.0" styleClass="glass-panel panel-padding">
+
+    <stylesheets>
+        <URL value="@/css/theme.css"/>
+        <URL value="@/css/result.css"/>
+    </stylesheets>
+
+    <content>
+        <VBox spacing="6">
+            <Text fx:id="simulationText" id="info_1"/>
+            <Text fx:id="consensusText" id="info_2"/>
+        </VBox>
+    </content>
+
+    <ButtonType fx:constant="OK"/>
+</DialogPane>

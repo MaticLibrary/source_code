@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<Menu xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.DrawMenuController"
+      text="Rysuj">
+
+    <items>
+        <MenuItem text="Wierzchołek" fx:id = "vertexItem"/>
+        <MenuItem text="Krawędź" fx:id = "edgeItem"/>
+        <MenuItem text="Usuń" fx:id = "deleteItem"/>
+        <MenuItem text="Brak" fx:id = "noneItem"/>
+        <MenuItem text="Cofnij" fx:id = "undoItem"/>
+        <MenuItem text="Ponów" fx:id = "redoItem"/>
+        <MenuItem text="Generuj zdrajców" fx:id = "generateTraitorsItem"/>
+        <MenuItem text="Generuj atakujących" fx:id="generateAttackersItem"/>
+        <MenuItem text="Generuj graf" fx:id = "generateGraphItem"/>
+    </items>
+</Menu>

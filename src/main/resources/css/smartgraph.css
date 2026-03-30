@@ -1,0 +1,80 @@
+.graph {
+    -fx-background-color: #0f141c;
+}
+
+.vertex {
+    -fx-stroke-width: 3;
+    -fx-stroke: #5aa7ff;
+    -fx-stroke-type: inside;
+    -fx-fill: #1f2b40;
+}
+
+.vertex-label {
+    -fx-font: bold 8pt "Bahnschrift";
+    -fx-fill: #EAF3FF;
+}
+
+.edge {
+    -fx-stroke-width: 2;
+    -fx-stroke: rgba(140, 170, 210, 0.6);
+    -fx-stroke-dash-array: 2 5 2 5;
+    -fx-fill: transparent;
+    -fx-stroke-line-cap: round;
+    -fx-opacity: 0.8;
+    -fx-cursor: hand;
+}
+
+.edge-label {
+    -fx-font: normal 6pt "Bahnschrift";
+    -fx-fill: #C8D6F0;
+}
+
+.arrow {
+    -fx-stroke-width: 2;
+    -fx-stroke: rgba(140, 170, 210, 0.8);
+    -fx-opacity: 0.8;
+}
+
+.traitor {
+    -fx-fill: #9b3b3b;
+}
+
+.loyal {
+    -fx-fill: #1f2b40;
+}
+
+.attack {
+    -fx-stroke: #ff6b6b;
+}
+
+.defense {
+    -fx-stroke: #67c1ff;
+}
+
+.none {
+    -fx-effect: none;
+}
+
+.commander {
+    -fx-effect: dropshadow(three-pass-box, #8bd3ff, 18, 0.2, 0, 0);
+}
+
+.lieutenant {
+    -fx-effect: dropshadow(three-pass-box, #7ddc87, 18, 0.2, 0, 0);
+}
+
+.king {
+    -fx-effect: dropshadow(three-pass-box, #8bd3ff, 18, 0.2, 0, 0);
+}
+
+.voter {
+    -fx-effect: dropshadow(three-pass-box, #8bd3ff, 18, 0.2, 0, 0);
+}
+
+.neighbour {
+    -fx-effect: dropshadow(three-pass-box, #7ddc87, 18, 0.2, 0, 0);
+}
+
+.alarm {
+    -fx-effect: dropshadow(three-pass-box, #ff7b7b, 22, 0.3, 0, 0);
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.HBox?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.controller.GraphLayoutController" spacing="8" styleClass="glass-toolbar">
+
+    <padding>
+        <Insets left="8" right="8" top="6" bottom="6"/>
+    </padding>
+
+    <Button text="Resetuj widok" fx:id="resetLayout" onAction="#reset"/>
+    <CheckBox text="Automatyczny układ" fx:id="automaticLayout"/>
+</HBox>

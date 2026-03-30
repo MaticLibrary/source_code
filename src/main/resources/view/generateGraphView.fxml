@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.controller.GenerateGraphController"
+            prefWidth="300" prefHeight="350" styleClass="glass-panel panel-padding">
+
+    <stylesheets>
+        <URL value="@/css/theme.css"/>
+        <URL value="@/css/generator.css"/>
+    </stylesheets>
+
+    <content>
+        <VBox spacing="8">
+            <Label text="Wybierz typ grafu do wygenerowania" id="label"/>
+            <ComboBox fx:id="graphBox" id="combo_box"/>
+            <fx:include fx:id="fullGraphSettings" source="graphGeneratorSettings/fullGraphSettingsView.fxml"/>
+            <fx:include fx:id="cycleGraphSettings" source="graphGeneratorSettings/cycleGraphSettingsView.fxml"/>
+            <fx:include fx:id="treeGraphSettings" source="graphGeneratorSettings/treeGraphSettingsView.fxml"/>
+            <fx:include fx:id="planarGraphSettings" source="graphGeneratorSettings/planarGraphSettingsView.fxml"/>
+            <fx:include fx:id="bipartiteGraphSettings" source="graphGeneratorSettings/bipartiteGraphSettingsView.fxml"/>
+        </VBox>
+    </content>
+
+    <ButtonType text="Anuluj" buttonData="CANCEL_CLOSE"/>
+    <ButtonType text="OK" buttonData="OK_DONE"/>
+</DialogPane>

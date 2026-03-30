@@ -1,0 +1,9 @@
+#root {
+    -fx-vgap: 8;
+    -fx-hgap: 8;
+}
+
+#label {
+    -fx-font-size: 13px;
+    -fx-text-fill: #CFE4FF;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import com.example.settings.IntegerSettingTextField?>
+<?import com.example.settings.SettingComboBox?>
+<?import java.net.URL?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:id="parent"
+          fx:controller="com.example.controller.settings.pbftSettingsController" id="root">
+
+    <stylesheets>
+        <URL value="@/css/algorithmSettings.css"/>
+    </stylesheets>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="Liczba sąsiadów (q)" fx:id="backupLabel" id="label" visible="false" managed="false"/>
+    <IntegerSettingTextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="q" GridPane.hgrow="ALWAYS" visible="false" managed="false"/>
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="Limit czasu" fx:id="timeoutLabel" id="label" visible="false" managed="false"/>
+    <IntegerSettingTextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="time" GridPane.hgrow="ALWAYS" visible="false" managed="false"/>
+    <!-- powyższe dwa ustawienia są automatyczne w pbft, można ewentualnie ręcznie usunąć znaczniki visible i managed  -->
+    <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="Tryb" fx:id="setupLabel" id="label"/>
+    <SettingComboBox GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="setupBox" maxWidth="Infinity"/>
+
+</GridPane>
