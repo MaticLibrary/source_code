@@ -1,0 +1,47 @@
+Podsumowanie zmian - Private BFT
+
+1. Co zostalo poprawione
+
+- decyzja nie jest juz liczona przez zwykla wiekszosc n0/n1
+- decyzja zapada dopiero po zebraniu quorum n-f
+- lojalny wezel podpisuje najwyzej jedna wartosc w rundzie
+- ECHO musi byc powiazane z podpisem lidera
+- wiadomosci rozchodza sie po krawedziach grafu, a nie all-to-all
+- prywatne reguly nie zmieniaja decyzji, tylko dzialaja jako polityki alarmowe
+
+2. Co oznacza alarm
+
+Alarm nie znaczy juz tylko "rozbieznosc regul".
+Alarm oznacza teraz, ze prywatna polityka wezla wykryla:
+- za slaby dowod,
+- konflikt lidera,
+- brak wystarczajacego quorum,
+- albo inny problem ze spojnoscia informacji.
+
+3. Co pokazuje wynik koncowy
+
+Na koncu symulacji aplikacja pokazuje teraz osobno:
+- czy osiagnieto konsensus,
+- jaka informacje wybrano na koncu,
+- jaka byla prawda bazowa na starcie,
+- czy wynik koncowy jest prawdziwy czy zaklamany.
+
+4. Jak rozumiana jest "prawda"
+
+W obecnej wersji:
+- prawda bazowa = poczatkowa wiekszosc opinii lojalnych wezlow
+
+Jesli lojalne wezly na starcie maja remis, aplikacja pokazuje,
+ze prawda bazowa jest niejednoznaczna.
+
+5. Wazne praktycznie
+
+- graf ma teraz realne znaczenie dla propagacji wiadomosci
+- przy rzadkich grafach timeout musi byc odpowiednio wiekszy
+- graf pelny daje najszybsza propagacje i najlatwiejsze uzyskanie quorum
+
+6. Status
+
+- dokumentacja szczegolowa: private_bft_zmiany.txt
+- dokumentacja skrotowa: private_bft_podsumowanie.txt
+- testy projektu przeszly poprawnie na JDK 17
