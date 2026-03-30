@@ -27421,5 +27421,2809 @@
             }
         ],
         "startTimestamp": "2026-03-30 15:04:50.075"
+    },
+    {
+        "logs": [
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:37.986"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:38.104"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:38.228"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:38.323"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:38.410"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:38.488"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:38.580"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:38.664"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:38.769"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:38.852"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:38.925"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:38.998"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:39.066"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:39.135"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:39.205"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:39.273"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:39.346"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:45:39.413"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:39.481"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:39.550"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:39.617"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:39.689"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:39.757"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:39.825"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:39.895"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:39.966"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:40.039"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:40.107"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:40.179"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:40.247"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:40.314"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:40.385"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:40.455"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:40.522"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:40.591"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:40.659"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:40.730"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:40.798"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:40.866"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:40.937"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:41.010"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:41.082"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:41.152"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:41.219"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:41.287"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:41.356"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:41.426"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:41.494"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:41.562"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:41.633"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:41.701"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:41.772"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:41.841"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:41.909"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:41.978"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:42.046"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:42.115"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:42.184"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:42.251"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:42.319"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:42.384"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:42.455"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:42.523"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:42.591"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:42.660"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:45:42.728"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:42.799"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:42.866"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:42.933"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:43.003"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:43.071"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:43.143"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:43.218"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:43.287"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:43.356"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:43.423"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:43.494"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:43.569"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:43.640"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:43.716"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:43.786"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:43.856"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:43.926"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:43.997"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:44.070"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:44.137"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:44.207"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:44.279"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:44.347"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:44.420"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:44.486"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:44.557"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:44.627"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:44.694"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:44.764"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:44.831"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:44.907"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:44.980"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:45.051"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:45.121"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:45.189"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:45.264"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:45.332"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:45.402"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:45.471"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:45.543"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:45.619"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:45:45.688"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:45.758"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:45.827"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:45.897"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:45.971"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:46.041"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:46.116"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:46.191"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:46.260"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:46.334"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:46.403"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:46.470"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:46.542"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:46.611"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:46.685"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:46.753"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:46.821"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:46.893"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:46.963"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:47.037"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:47.110"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:47.183"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:47.254"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:47.322"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:47.393"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:47.462"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:47.531"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:47.602"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:47.674"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:47.753"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:47.844"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:47.913"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:47.986"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:48.056"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:48.131"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:48.200"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:48.270"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:48.339"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:48.407"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:48.480"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:48.562"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:48.632"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:48.702"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:48.792"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:48.876"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:48.945"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:49.015"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:49.085"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:49.156"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:49.227"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:49.298"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:49.366"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:49.437"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:49.514"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:49.586"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:49.656"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:49.733"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:49.804"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:49.877"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:49.951"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:50.025"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:50.094"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:50.179"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:50.247"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:50.321"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:50.396"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:50.465"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:50.534"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:50.604"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:50.676"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:50.747"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:50.817"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:50.887"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:50.957"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:51.028"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:51.098"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:51.168"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:51.238"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:51.310"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:51.389"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:51.459"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:51.528"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:51.616"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:45:51.695"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:51.787"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:51.871"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:51.971"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:52.071"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:52.164"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:52.270"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:52.367"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:52.491"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:52.592"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:52.683"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:52.756"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:52.827"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:52.914"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:52.984"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:53.056"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:53.137"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:53.212"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:53.290"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:53.376"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:53.468"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:53.568"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:53.691"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:53.789"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:53.889"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:53.988"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:54.085"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:54.189"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:54.285"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:54.374"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:54.453"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:54.570"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:54.662"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:54.737"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:54.816"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:54.889"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:54.963"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:55.035"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:55.108"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:55.178"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:55.251"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:55.325"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:45:55.398"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:55.467"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:55.538"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:55.609"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:55.680"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:55.755"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:55.825"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:55.897"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:55.966"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:56.043"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:56.117"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:56.186"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:56.259"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:56.333"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:56.408"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:56.479"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:56.552"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:56.634"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:45:56.705"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:56.782"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:56.855"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:56.925"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:56.997"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:57.078"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:57.152"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:57.221"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:57.297"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:57.373"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:57.443"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:57.516"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:57.588"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:57.659"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:57.730"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:45:57.800"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:57.875"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:57.946"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:58.028"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:58.099"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:58.172"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:58.243"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:58.321"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:58.392"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:45:58.462"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:58.564"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:58.635"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:58.704"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:58.776"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:58.856"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:58.930"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:59.000"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:59.072"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:59.140"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:59.213"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:59.281"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:59.355"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:45:59.424"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:45:59.498"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:59.569"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:45:59.641"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:45:59.712"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:45:59.784"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:45:59.854"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:45:59.926"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:45:59.994"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:00.067"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:00.137"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:46:00.214"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:00.294"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:46:00.369"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:00.441"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:00.512"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:00.582"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:00.654"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:00.723"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:00.797"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:00.869"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:00.944"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:01.014"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:01.088"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:01.159"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:01.246"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:01.315"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 decyduje: atak",
+                "timestamp": "2026-03-30 15:46:01.390"
+            },
+            {
+                "item": "[Koniec] Symulacja zakończona",
+                "timestamp": "2026-03-30 15:46:01.462"
+            }
+        ],
+        "endTimestamp": "2026-03-30 15:46:01.462",
+        "startTimestamp": "2026-03-30 15:45:37.986"
+    },
+    {
+        "logs": [
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:01.603"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:01.675"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:01.745"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:01.821"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:01.904"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:01.977"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:02.047"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:02.120"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:02.190"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:02.261"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:02.331"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:02.404"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:02.477"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:02.550"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:02.620"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:02.692"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:02.763"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:46:02.835"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:46:02.905"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:02.978"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:46:03.052"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:03.126"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:46:03.195"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:03.268"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:03.342"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:03.417"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 1",
+                "timestamp": "2026-03-30 15:46:03.490"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 3",
+                "timestamp": "2026-03-30 15:46:03.565"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:03.635"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 5",
+                "timestamp": "2026-03-30 15:46:03.709"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:03.778"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 7",
+                "timestamp": "2026-03-30 15:46:03.853"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:03.925"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:46:04.000"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:04.072"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:46:04.145"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:46:04.216"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:04.287"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:46:04.360"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:04.433"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:04.503"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:04.578"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:04.648"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:04.720"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:04.790"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:04.862"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:04.932"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:05.005"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:05.076"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:46:05.149"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:05.219"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:46:05.291"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:05.364"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:46:05.436"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:46:05.510"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:05.583"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:05.655"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:05.733"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 1",
+                "timestamp": "2026-03-30 15:46:05.805"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:05.880"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 3",
+                "timestamp": "2026-03-30 15:46:05.952"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:06.026"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 5",
+                "timestamp": "2026-03-30 15:46:06.096"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: odwrót do 7",
+                "timestamp": "2026-03-30 15:46:06.169"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:06.240"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:46:06.336"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:06.407"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:46:06.483"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:06.556"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:46:06.656"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:06.727"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:46:06.804"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:06.885"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:06.966"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:07.051"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:07.143"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:07.260"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:07.393"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:07.477"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:07.558"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:07.630"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:07.704"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:07.777"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:07.854"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:07.927"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:08.000"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:08.073"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:08.148"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:08.237"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:08.311"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:08.383"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:08.456"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:08.527"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:08.600"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:08.670"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:08.744"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:08.828"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:08.902"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:08.974"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:09.047"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:09.117"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:09.189"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:09.270"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:09.347"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:09.424"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:09.522"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:09.605"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:09.686"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:09.769"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:09.845"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:09.919"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:10.008"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:10.100"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:10.187"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:10.261"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:10.337"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:10.422"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:10.502"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:10.574"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:10.648"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:10.719"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:10.793"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:10.865"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:10.938"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:11.009"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:11.085"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:11.156"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:11.228"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:11.298"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:11.372"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:11.443"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:11.514"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:11.585"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:11.664"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:11.735"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:11.809"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:11.881"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:11.954"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:12.027"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:12.102"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:12.173"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:12.247"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:12.320"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:12.400"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:12.472"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:12.548"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:12.621"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:12.695"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:12.765"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:12.839"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:12.909"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:12.982"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:13.053"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:13.128"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:13.199"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:13.271"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:13.342"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:13.414"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:13.485"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:13.558"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:13.630"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:13.704"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:13.775"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:13.849"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:13.920"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:13.993"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:14.064"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:14.139"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:14.210"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:14.282"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:14.354"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:14.426"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:14.501"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:14.579"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:14.656"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:14.728"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:14.799"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:14.873"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:14.945"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:15.018"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:15.089"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:15.165"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:15.236"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:15.310"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:15.381"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:15.454"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:15.525"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:15.598"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:15.673"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:15.746"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:15.817"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:15.896"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:15.977"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:16.062"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:16.155"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:16.231"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:16.305"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:16.380"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:16.463"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:16.541"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:16.613"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:16.696"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:16.769"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:16.844"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:16.915"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:16.989"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:17.061"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:17.135"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:17.211"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:17.286"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:17.358"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:17.437"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:17.524"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:17.600"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:17.672"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:17.749"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:17.820"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:17.895"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:17.967"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:18.043"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:18.117"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:18.195"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:18.269"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:18.346"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:18.422"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:18.500"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:18.574"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:18.650"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:18.723"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:18.800"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:18.874"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:18.954"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:19.032"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:19.107"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:19.177"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:19.255"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:19.326"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:19.401"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:19.474"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:19.548"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:19.619"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:19.709"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:19.784"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:19.859"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:19.932"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:20.007"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:20.080"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:20.156"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:20.231"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:20.306"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:20.379"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:20.452"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:20.524"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:20.599"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:20.671"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:20.748"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:20.821"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:20.901"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:20.978"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:46:21.058"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:46:21.133"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:46:21.207"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:46:21.281"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:46:21.355"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:46:21.429"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:46:21.505"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:46:21.579"
+            }
+        ],
+        "startTimestamp": "2026-03-30 15:46:01.603"
+    },
+    {
+        "logs": [
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:52:30.486"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:30.637"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:52:30.793"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:30.969"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:52:31.114"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:31.290"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:52:31.432"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:31.574"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:52:31.693"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:31.868"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:52:31.998"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:32.124"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:52:32.271"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:32.408"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:52:32.539"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 0 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:32.677"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:32.801"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:52:32.905"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:52:33.000"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:33.102"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:52:33.227"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:33.346"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:52:33.451"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 1 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:33.553"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:33.642"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:33.730"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:33.889"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:34.014"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:52:34.132"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:34.225"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:52:34.316"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:34.428"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:34.520"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:52:34.640"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:34.734"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:52:34.833"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:52:34.925"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:35.019"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:52:35.121"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 3 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:35.215"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:52:35.299"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:52:35.411"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:35.509"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:52:35.603"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:35.708"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:35.828"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:52:35.954"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 4 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:36.051"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:36.143"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:36.239"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:36.334"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:36.421"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:36.510"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:52:36.593"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:52:36.672"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 5 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:36.779"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:52:36.884"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:52:36.973"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:37.053"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:52:37.131"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:37.218"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:52:37.308"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:37.404"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 6 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:37.506"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:37.644"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 0",
+                "timestamp": "2026-03-30 15:52:37.761"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:37.862"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 2",
+                "timestamp": "2026-03-30 15:52:37.959"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:38.040"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 4",
+                "timestamp": "2026-03-30 15:52:38.123"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:38.206"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 7 wysyła wiadomość: atak do 6",
+                "timestamp": "2026-03-30 15:52:38.317"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:38.405"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:38.490"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:38.591"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:38.686"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:52:38.775"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:38.870"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:52:38.958"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:39.044"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:39.139"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:39.217"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:39.321"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:39.406"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:52:39.490"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:39.582"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:52:39.671"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:39.784"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:39.874"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:39.965"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:40.047"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:40.145"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:52:40.231"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:40.323"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:52:40.435"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:40.528"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:40.657"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:40.754"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:40.838"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:40.936"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:52:41.031"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:41.135"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:52:41.234"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:41.341"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:41.476"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:41.586"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 1",
+                "timestamp": "2026-03-30 15:52:41.713"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 3",
+                "timestamp": "2026-03-30 15:52:41.865"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 4",
+                "timestamp": "2026-03-30 15:52:42.029"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 5",
+                "timestamp": "2026-03-30 15:52:42.184"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 6",
+                "timestamp": "2026-03-30 15:52:42.350"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: atak do 7",
+                "timestamp": "2026-03-30 15:52:42.513"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 2",
+                "timestamp": "2026-03-30 15:52:42.669"
+            },
+            {
+                "item": "[Zdarzenie] Wierzchołek 2 wysyła wiadomość: odwrót do 0",
+                "timestamp": "2026-03-30 15:52:42.838"
+            }
+        ],
+        "startTimestamp": "2026-03-30 15:52:30.486"
     }
 ]}

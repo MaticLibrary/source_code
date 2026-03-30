@@ -445,7 +445,9 @@ public class SimulationController {
                     graph.getLoyalConsensusOpinion(),
                     initialLoyalMajorityOpinion,
                     initialLoyalSupportingCount,
-                    initialLoyalNotSupportingCount
+                    initialLoyalNotSupportingCount,
+                    graph.numVertices(),
+                    graph.getTraitorsCount()
             );
             simulationResultDialog.setDialogPane(controllerAndView.getView().orElseThrow(() -> new RuntimeException("Can't load dialog view, when there is no present")));
             simulationResultDialog.showAndWait();

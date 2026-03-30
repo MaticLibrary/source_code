@@ -28,7 +28,10 @@ public class SimulationResultController {
                            Boolean finalConsensusOpinion,
                            Boolean initialReferenceOpinion,
                            int initialLoyalSupportingCount,
-                           int initialLoyalNotSupportingCount) {
+                           int initialLoyalNotSupportingCount,
+                           int totalAgents,
+                           int traitorsCount) {
+        int loyalCount = initialLoyalSupportingCount + initialLoyalNotSupportingCount;
         if (isConsensusReached) {
             simulationText.setText("Symulacja zakonczona poprawnie");
             consensusText.setText("Osiagnieto konsensus");
@@ -46,12 +49,21 @@ public class SimulationResultController {
         }
 
         if (initialReferenceOpinion != null) {
-            referenceText.setText("Prawda bazowa na starcie: " + opinionLabel(initialReferenceOpinion)
-                    + " (lojalni: atak=" + initialLoyalSupportingCount + ", odwrot=" + initialLoyalNotSupportingCount + ")");
-        } else if (initialLoyalSupportingCount + initialLoyalNotSupportingCount == 0) {
+            referenceText.setText("Prawda bazowa na starcie (tylko lojalni): " + opinionLabel(initialReferenceOpinion)
+                    + " (atak=" + initialLoyalSupportingCount
+                    + ", odwrot=" + initialLoyalNotSupportingCount
+                    + ", lojalni=" + loyalCount
+                    + ", zdrajcy=" + traitorsCount
+                    + ", razem=" + totalAgents + ")");
+        } else if (loyalCount == 0) {
             referenceText.setText("Prawda bazowa na starcie: brak lojalnych wezlow, nie da sie ocenic.");
         } else {
-            referenceText.setText("Prawda bazowa na starcie: niejednoznaczna (remis lojalnych wezlow).");
+            referenceText.setText("Prawda bazowa na starcie (tylko lojalni): niejednoznaczna (atak="
+                    + initialLoyalSupportingCount
+                    + ", odwrot=" + initialLoyalNotSupportingCount
+                    + ", lojalni=" + loyalCount
+                    + ", zdrajcy=" + traitorsCount
+                    + ", razem=" + totalAgents + ").");
         }
 
         if (!isConsensusReached || finalConsensusOpinion == null) {
