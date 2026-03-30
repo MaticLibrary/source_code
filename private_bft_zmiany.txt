@@ -100,6 +100,15 @@ aby odpowiadal nowej semantyce:
 Zaktualizowano tez strone pomocy w aplikacji,
 aby odpowiadala nowej logice algorytmu.
 
+Na koncu symulacji dialog wyniku nie pokazuje juz tylko informacji o samym konsensusie.
+Wynik koncowy zawiera teraz:
+- czy osiagnieto konsensus,
+- jaka informacje wybrano na koncu,
+- jaka byla prawda bazowa na starcie,
+- czy wynik koncowy jest zgodny z prawda bazowa, czy zaklamany.
+
+Jako prawde bazowa przyjeto poczatkowa wiekszosc opinii lojalnych wezlow.
+
 
 5. Zmiany w testach
 

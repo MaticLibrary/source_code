@@ -121,6 +121,10 @@ public class SimulationController {
     private final BooleanProperty areAlgorithmSettingsValid = new SimpleBooleanProperty(true);
     private final BooleanProperty skipAnimations = new SimpleBooleanProperty(false);
 
+    private Boolean initialLoyalMajorityOpinion;
+    private int initialLoyalSupportingCount;
+    private int initialLoyalNotSupportingCount;
+
     private static final int DEFAULT_AGENTS = 8;
     private static final int DEFAULT_TRAITORS = 2;
 
@@ -390,6 +394,7 @@ public class SimulationController {
         informationController.clearView();
         simulation.clearData();
         applyAnimationPreference();
+        captureInitialTruthReference();
         AlgorithmType selectedAlgorithm = algorithmsBox.getValue();
         simulation.setEnvironment(selectedAlgorithm.getAlgorithm(), getAlgorithmController(selectedAlgorithm).getAlgorithmSettings());
         simulation.setInformationEngine(InformationEngineFactory.createForAlgorithm(selectedAlgorithm, informationController));
@@ -434,10 +439,24 @@ public class SimulationController {
         Platform.runLater(() -> {
             Dialog<ButtonType> simulationResultDialog = new Dialog<>();
             FxControllerAndView<SimulationResultController, DialogPane> controllerAndView = fxWeaver.load(SimulationResultController.class);
-            controllerAndView.getController().setMessage(graphController.getGraph().checkConsensus());
+            MyGraph<Integer, Integer> graph = graphController.getGraph();
+            controllerAndView.getController().setMessage(
+                    graph.checkConsensus(),
+                    graph.getLoyalConsensusOpinion(),
+                    initialLoyalMajorityOpinion,
+                    initialLoyalSupportingCount,
+                    initialLoyalNotSupportingCount
+            );
             simulationResultDialog.setDialogPane(controllerAndView.getView().orElseThrow(() -> new RuntimeException("Can't load dialog view, when there is no present")));
             simulationResultDialog.showAndWait();
         });
+    }
+
+    private void captureInitialTruthReference() {
+        MyGraph<Integer, Integer> graph = graphController.getGraph();
+        initialLoyalSupportingCount = graph.getLoyalSupportingOpinionCount();
+        initialLoyalNotSupportingCount = graph.getLoyalNotSupportingOpinionCount();
+        initialLoyalMajorityOpinion = graph.getLoyalMajorityOpinion();
     }
 
     public void doStepTask() {

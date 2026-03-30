@@ -9,3 +9,21 @@
     -fx-font-size: 13px;
     -fx-padding: 4 0 0 0;
 }
+
+#info_3 {
+    -fx-font-size: 13px;
+    -fx-padding: 6 0 0 0;
+    -fx-fill: #EAF3FF;
+}
+
+#info_4 {
+    -fx-font-size: 12px;
+    -fx-padding: 6 0 0 0;
+    -fx-fill: #C8D8EB;
+}
+
+#info_5 {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 0 0 0;
+}

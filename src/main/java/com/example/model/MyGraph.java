@@ -24,6 +24,48 @@ public class MyGraph<V,E> implements Graph<V,E> {
                 .orElse(true);
     }
 
+    public Boolean getLoyalConsensusOpinion() {
+        List<MyVertex<V>> loyalVertices = vertices().stream()
+                .map(v -> (MyVertex<V>) v)
+                .filter(v -> !v.getIsTraitor().getValue())
+                .collect(Collectors.toList());
+
+        return loyalVertices.stream()
+                .findFirst()
+                .filter(u -> loyalVertices.stream()
+                        .allMatch(v -> v.getIsSupporting().getValue() == u.isSupportingOpinion().getValue()))
+                .map(v -> v.getIsSupporting().getValue())
+                .orElse(null);
+    }
+
+    public int getLoyalSupportingOpinionCount() {
+        return (int) vertices().stream()
+                .map(v -> (MyVertex<V>) v)
+                .filter(v -> !v.getIsTraitor().getValue())
+                .filter(v -> v.isSupportingOpinion().getValue())
+                .count();
+    }
+
+    public int getLoyalNotSupportingOpinionCount() {
+        return (int) vertices().stream()
+                .map(v -> (MyVertex<V>) v)
+                .filter(v -> !v.getIsTraitor().getValue())
+                .filter(v -> !v.isSupportingOpinion().getValue())
+                .count();
+    }
+
+    public Boolean getLoyalMajorityOpinion() {
+        int supporting = getLoyalSupportingOpinionCount();
+        int notSupporting = getLoyalNotSupportingOpinionCount();
+        if (supporting == 0 && notSupporting == 0) {
+            return null;
+        }
+        if (supporting == notSupporting) {
+            return null;
+        }
+        return supporting > notSupporting;
+    }
+
     public int getMinDegree() {
         return vertices().stream()
                 .mapToInt(v -> vertexNeighbours(v).size())

@@ -9,7 +9,7 @@
 <DialogPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.controller.SimulationResultController"
-            prefHeight="120.0" prefWidth="260.0" styleClass="glass-panel panel-padding">
+            prefHeight="220.0" prefWidth="420.0" styleClass="glass-panel panel-padding">
 
     <stylesheets>
         <URL value="@/css/theme.css"/>
@@ -20,6 +20,9 @@
         <VBox spacing="6">
             <Text fx:id="simulationText" id="info_1"/>
             <Text fx:id="consensusText" id="info_2"/>
+            <Text fx:id="finalInfoText" id="info_3"/>
+            <Text fx:id="referenceText" id="info_4" wrappingWidth="380.0"/>
+            <Text fx:id="verdictText" id="info_5" wrappingWidth="380.0"/>
         </VBox>
     </content>
 
