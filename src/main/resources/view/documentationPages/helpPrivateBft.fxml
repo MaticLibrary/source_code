@@ -5,21 +5,23 @@
 <?import javafx.scene.layout.VBox?>
 
 <VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
-    <Label text="BFT z regułami prywatnymi" styleClass="docs-page-title"/>
-    <Label text="Podpisy cyfrowe + prywatne reguły węzłów." styleClass="docs-page-lead"/>
-    <TextArea editable="false" prefHeight="320.0" prefWidth="360.0" wrapText="true"
+    <Label text="BFT z regulami prywatnymi" styleClass="docs-page-title"/>
+    <Label text="Podpisy cyfrowe, quorum i prywatne polityki alarmowe." styleClass="docs-page-lead"/>
+    <TextArea editable="false" prefHeight="340.0" prefWidth="360.0" wrapText="true"
               styleClass="docs-text"
-              text="Warunek: N ≥ 2f + 1.
+              text="Model:
+1) Lider wysyla podpisana propozycje do swoich sasiadow.
+2) Wezly weryfikuja podpisy i przekazuja ECHO dalej po krawedziach grafu.
+3) Lojalny wezel podpisuje najwyzej jedna wartosc w rundzie.
+4) Decyzja zapada dopiero po zebraniu certyfikatu quorum n-f.
+5) Gdy nie ma quorum albo lider podpisal sprzeczne wartosci, runda nie wymusza decyzji.
+6) Reguly prywatne nie zmieniaja decyzji - tylko oceniaja jakosc dowodu i moga podniesc ALARM.
 
-Runda:
-1) Lider wysyła PROPOSAL z podpisem.
-2) Węzły weryfikują podpisy i rozsyłają ECHO.
-3) Po timeout liczą unikalne podpisy dla 0 i 1.
-4) Decyzja globalna = większość (lub lider przy remisie).
-5) Reguła prywatna sprawdza spójność; rozbieżność → ALARM.
+Wazne:
+- topologia grafu ma znaczenie, bo wiadomosci ida po krawedziach,
+- wiekszy timeout pozwala dotrzec wiadomosci dalej w rzadkich grafach,
+- mapowanie regul zalezy od ID mod liczba_regul.
 
-Podpisy: każdy podpisuje (round, value), weryfikacja jest niezależna.
-
-Kiedy wybrać:
-Gdy chcesz pokazać znaczenie podpisów i prywatnych reguł."/>
+Kiedy wybrac:
+Gdy chcesz pokazac polaczenie podpisow cyfrowych, propagacji po grafie i lokalnych polityk alarmowych."/>
 </VBox>

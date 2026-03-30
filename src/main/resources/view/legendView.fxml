@@ -53,6 +53,6 @@
         <ImageView fitWidth="20" fitHeight="20">
             <Image url="@../view/images/circle-info-solid.png"/>
         </ImageView>
-        <Label text="Alarm: rozbieżność reguł"/>
+        <Label text="Alarm: problem z dowodem lub konfliktem lidera"/>
     </HBox>
 </FlowPane>

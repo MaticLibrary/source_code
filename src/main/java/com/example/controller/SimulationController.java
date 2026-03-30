@@ -420,7 +420,7 @@ public class SimulationController {
                     .map(entry -> entry.getKey().element().toString())
                     .toList();
             if (!alarms.isEmpty()) {
-                String alarmMessage = "ALARM: rozbieżność reguł u węzłów " + String.join(", ", alarms) + ".";
+                String alarmMessage = "ALARM: polityka prywatna wykryla problem z dowodem lub konfliktem lidera u wezlow " + String.join(", ", alarms) + ".";
                 loggerController.addItem("[ALARM] " + alarmMessage);
                 lastOperation = alarmMessage;
             }

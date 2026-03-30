@@ -37,8 +37,7 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
 
     private enum MessageType {
         PROPOSAL,
-        ECHO,
-        ALARM
+        ECHO
     }
 
     private static final class SignatureEntry {
@@ -57,28 +56,22 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
         private final int round;
         private final boolean value;
         private final List<SignatureEntry> signatures;
-        private final String reason;
 
-        private Message(MessageType type, int sender, int round, boolean value, List<SignatureEntry> signatures, String reason) {
+        private Message(MessageType type, int sender, int round, boolean value, List<SignatureEntry> signatures) {
             this.type = type;
             this.sender = sender;
             this.round = round;
             this.value = value;
             this.signatures = signatures;
-            this.reason = reason;
         }
 
         private static Message proposal(int sender, int round, boolean value, byte[] signature) {
             return new Message(MessageType.PROPOSAL, sender, round, value,
-                    List.of(new SignatureEntry(sender, signature)), null);
+                    List.of(new SignatureEntry(sender, signature)));
         }
 
         private static Message echo(int sender, int round, boolean value, List<SignatureEntry> signatures) {
-            return new Message(MessageType.ECHO, sender, round, value, signatures, null);
-        }
-
-        private static Message alarm(int sender, int round, String reason) {
-            return new Message(MessageType.ALARM, sender, round, false, List.of(), reason);
+            return new Message(MessageType.ECHO, sender, round, value, signatures);
         }
     }
 
@@ -88,7 +81,6 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
         private Boolean echoedValue = null;
         private Boolean observedLeaderValue = null;
         private boolean leaderConflict = false;
-        private boolean alarmTriggered = false;
 
         private NodeState() {
             collected.put(Boolean.TRUE, new HashMap<>());
@@ -225,7 +217,7 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
         report.getProperties().put("zbieranie", (sendElapsed + 1) + "/" + timeout);
 
         sendElapsed++;
-        if (sendElapsed >= timeout) {
+        if (sendElapsed >= timeout || inbox.isEmpty()) {
             phase = AlgorithmPhase.CHOOSE;
         }
 
@@ -257,7 +249,6 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
 
             if (alarm) {
                 alarmNodes.add(v);
-                states.get(v).alarmTriggered = true;
             }
 
             if (!v.isTraitor().get()) {
@@ -344,9 +335,6 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
     }
 
     private boolean verifyMessage(Message message) {
-        if (message.type == MessageType.ALARM) {
-            return true;
-        }
         if (message.signatures == null || message.signatures.isEmpty()) {
             return false;
         }
@@ -400,8 +388,7 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
             state.echoedValue = message.value;
         }
 
-        for (Vertex<Integer> vertex : graph.vertices()) {
-            MyVertex<Integer> receiver = (MyVertex<Integer>) vertex;
+        for (MyVertex<Integer> receiver : propagationTargets(sender)) {
             boolean valueToSend = message.value;
             List<SignatureEntry> signaturesToSend = baseSignatures;
 
@@ -427,8 +414,7 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
         if (leader == null) {
             return;
         }
-        for (Vertex<Integer> vertex : graph.vertices()) {
-            MyVertex<Integer> receiver = (MyVertex<Integer>) vertex;
+        for (MyVertex<Integer> receiver : propagationTargets(leader)) {
             boolean value = leaderOpinionFor(receiver);
             byte[] signature = signValue(leader.element(), round, value);
             if (signature == null) {
@@ -467,6 +453,7 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
         report.getProperties().put("maks_rund", String.valueOf(maxRounds));
         int totalRules = PrivateRuleType.values().length;
         report.getProperties().put("reguły", totalRules + " (przypisanie: ID mod " + totalRules + ")");
+        report.getProperties().put("mapowanie_regul", ruleAssignmentSummary());
     }
 
     private void initializeKeys() {
@@ -634,6 +621,24 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
         List<SignatureEntry> result = new ArrayList<>(merged.values());
         result.sort(Comparator.comparingInt(entry -> entry.id));
         return result;
+    }
+
+    private List<MyVertex<Integer>> propagationTargets(MyVertex<Integer> sender) {
+        LinkedHashSet<MyVertex<Integer>> targets = new LinkedHashSet<>();
+        targets.add(sender);
+        for (Vertex<Integer> neighbour : graph.vertexNeighbours(sender)) {
+            targets.add((MyVertex<Integer>) neighbour);
+        }
+        return new ArrayList<>(targets);
+    }
+
+    private String ruleAssignmentSummary() {
+        StringJoiner joiner = new StringJoiner("; ");
+        PrivateRuleType[] allRules = PrivateRuleType.values();
+        for (int i = 0; i < allRules.length; i++) {
+            joiner.add(i + "=" + allRules[i].getLabel());
+        }
+        return "ID mod " + allRules.length + ": " + joiner;
     }
 
     private void assignRules() {

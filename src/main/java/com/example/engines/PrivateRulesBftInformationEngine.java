@@ -5,7 +5,7 @@ import com.example.algorithm.VertexRole;
 import com.example.algorithm.report.StepReport;
 import com.example.engines.printer.InformationPrinter;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class PrivateRulesBftInformationEngine implements InformationEngine {
@@ -26,7 +26,7 @@ public class PrivateRulesBftInformationEngine implements InformationEngine {
 
     private Map<String, String> generateProperties(StepReport stepReport) {
         Map<String, String> properties = stepReport.getProperties();
-        Map<String, String> result = new HashMap<>();
+        Map<String, String> result = new LinkedHashMap<>();
 
         result.put("runda", properties.getOrDefault("runda", "N/A"));
         result.put("lider", properties.getOrDefault("lider", "N/A"));
@@ -37,6 +37,7 @@ public class PrivateRulesBftInformationEngine implements InformationEngine {
         result.put("decyzje", properties.getOrDefault("decyzje", "0/0"));
         result.put("konflikty lidera", properties.getOrDefault("konflikty_lidera", "0"));
         result.put("regu\u0142y", properties.getOrDefault("regu\u0142y", "N/A"));
+        result.put("mapowanie regul", properties.getOrDefault("mapowanie_regul", "N/A"));
 
         stepReport.getRoles().entrySet().stream()
                 .filter(entry -> entry.getValue() == VertexRole.COMMANDER)
@@ -48,8 +49,8 @@ public class PrivateRulesBftInformationEngine implements InformationEngine {
 
     private String generateDescription(StepReport stepReport) {
         return switch (stepReport.getAlgorithmPhase()) {
-            case SEND -> "PROPOSAL/ECHO: lider rozsy\u0142a podpisan\u0105 propozycj\u0119, a uczciwy w\u0119ze\u0142 podpisuje co najwy\u017cej jedn\u0105 warto\u015b\u0107 i tylko wtedy, gdy widzi \u015blad podpisu lidera.";
-            case CHOOSE -> "Decyzja: warto\u015b\u0107 jest przyjmowana dopiero po zebraniu certyfikatu quorum (n-f podpis\u00f3w). Regu\u0142y prywatne ocenia\u0105 jako\u015b\u0107 dowodu i mog\u0105 zg\u0142osi\u0107 ALARM.";
+            case SEND -> "PROPOSAL/ECHO: lider rozsyla podpisana propozycje do swoich sasiadow, a uczciwy wezel podpisuje co najwyzej jedna wartosc i przekazuje ja dalej po krawedziach grafu.";
+            case CHOOSE -> "Decyzja: wartosc jest przyjmowana dopiero po zebraniu certyfikatu quorum (n-f podpisow). Reguly prywatne oceniaja jakosc dowodu i moga zglosic ALARM.";
             default -> "Nieznana faza.";
         };
     }

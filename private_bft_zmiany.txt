@@ -32,7 +32,7 @@ Dodano stan echoedValue w NodeState.
 To oznacza, ze lojalny wezel nie moze juz podpisac jednoczesnie 0 i 1 w tej samej rundzie.
 To byla jedna z najwazniejszych wad starej wersji.
 
-2.3. ECHO musi byc powiazane z liderem
+2.3. ECHO musi byc powiazane z liderem i propagowane po grafie
 
 Nowa walidacja wiadomosci wymaga, aby:
 - PROPOSAL mial tylko podpis lidera,
@@ -40,6 +40,8 @@ Nowa walidacja wiadomosci wymaga, aby:
 - ECHO zawieralo tez podpis nadawcy tej wiadomosci.
 
 Dzieki temu uczciwe wezly nie wzmacniaja juz dowolnych wiadomosci zdrajcy bez dowodu pochodzenia od lidera.
+Dodatkowo wiadomosci sa teraz przekazywane po rzeczywistych krawedziach grafu,
+a nie do wszystkich wierzcholkow naraz.
 
 2.4. Wykrywanie sprzecznych wiadomosci lidera
 
@@ -88,11 +90,15 @@ Dodano nowe informacje do raportu:
 - quorum
 - decyzje (ilu lojalnych uczestnikow podjelo decyzje)
 - konflikty_lidera
+- mapowanie_regul
 
 Opis algorytmu w InformationEngine zostal zmieniony tak,
 aby odpowiadal nowej semantyce:
-- SEND: podpisana propozycja lidera i pojedyncze ECHO od uczciwego wezla,
+- SEND: podpisana propozycja lidera i pojedyncze ECHO od uczciwego wezla przekazywane po krawedziach,
 - CHOOSE: decyzja tylko po zebraniu certyfikatu quorum, a prywatne reguly pelnia role monitorujaca.
+
+Zaktualizowano tez strone pomocy w aplikacji,
+aby odpowiadala nowej logice algorytmu.
 
 
 5. Zmiany w testach
@@ -101,6 +107,7 @@ Test jednostkowy zostal poprawiony:
 - timeout ustawiono na 2,
 - test sprawdza nie tylko zakonczenie algorytmu,
 - ale tez osiagniecie konsensusu.
+- dodano test wykrywajacy konflikt podpisow od zdradzieckiego lidera.
 
 To lepiej odpowiada temu, co chcemy teraz zweryfikowac.
 
@@ -118,13 +125,13 @@ Wynik:
 
 7. Wazne zalozenie tej wersji
 
-Ta wersja nadal zaklada logiczna komunikacje all-to-all.
-W praktyce oznacza to, ze algorytm zachowuje sie jak protokol dla pelnej sieci komunikacyjnej,
-nawet jesli narysowany graf nie jest pelny.
+Ta wersja nie ignoruje juz topologii grafu.
+Wiadomosci rozchodza sie po krawedziach, wiec ksztalt grafu i timeout maja realny wplyw na wynik.
 
 Wniosek praktyczny:
-- dla tej wersji najlepiej uzywac grafu pelnego,
-- albo traktowac krawedzie jako warstwe wizualna, a nie ograniczenie komunikacji.
+- graf pelny daje najszybsza propagacje i najlatwiejsze uzyskanie quorum,
+- dla grafow rzadszych trzeba dobrac wiekszy timeout,
+- w grafie slabo spojnym brak decyzji moze byc poprawnym skutkiem zbyt slabego przeplywu informacji.
 
 
 8. Efekt koncowy
