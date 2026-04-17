@@ -4,6 +4,7 @@ import com.example.algorithm.AlgorithmType;
 import com.example.algorithm.VertexRole;
 import com.example.draw.DefinedGraph;
 import com.example.draw.GraphGenerator;
+import com.example.draw.OpinionGenerator;
 import com.example.draw.TraitorsGenerator;
 import com.example.algorithm.operations.Operation;
 import com.example.algorithm.report.OperationsBatch;
@@ -112,6 +113,9 @@ public class SimulationController {
     private TraitorsGenerator traitorsGenerator;
 
     @Autowired
+    private OpinionGenerator opinionGenerator;
+
+    @Autowired
     private FxWeaver fxWeaver;
 
     private final BooleanProperty paused = new SimpleBooleanProperty(true);
@@ -127,6 +131,7 @@ public class SimulationController {
 
     private static final int DEFAULT_AGENTS = 8;
     private static final int DEFAULT_TRAITORS = 2;
+    private static final double QUICK_SIM_ATTACKERS_SHARE = 0.5;
 
     public void show() {
         parent.setVisible(true);
@@ -286,7 +291,7 @@ public class SimulationController {
         if (traitors > maxByzantine) {
             quickSetupHint.setText("Uwaga: dla BFT wymagane jest N \u2265 2f + 1. Zmniejsz liczb\u0119 zdrajc\u00f3w lub zwi\u0119ksz liczb\u0119 agent\u00f3w.");
         } else {
-            quickSetupHint.setText("Tworz\u0119 graf pe\u0142ny (ka\u017cdy z ka\u017cdym) i losowo wybieram zdrajc\u00f3w.");
+            quickSetupHint.setText("Tworz\u0119 graf pe\u0142ny (ka\u017cdy z ka\u017cdym), losowo wybieram zdrajc\u00f3w i rozdaj\u0119 startowe opinie 50/50.");
         }
     }
 
@@ -297,6 +302,7 @@ public class SimulationController {
 
         MyGraph<Integer, Integer> generatedGraph = generateFullGraph(agents);
         graphController.setModelGraph(generatedGraph);
+        opinionGenerator.generateAttackers(generatedGraph, QUICK_SIM_ATTACKERS_SHARE);
         traitorsGenerator.generateTraitorsCount(generatedGraph, traitors);
         graphController.colorGraphView();
         graphController.updateVerticesTooltips();

@@ -94,6 +94,37 @@ class PrivateRulesBftAlgorithmTest {
         assertEquals("nie", report.getProperties().get("odpornosc_kwantowa"));
     }
 
+    @Test
+    void honestRetreatingLeaderCanDriveConsensusToRetreat() {
+        MyGraph<Integer, Integer> graph = new MyGraph<>();
+        for (int i = 0; i < 4; i++) {
+            graph.insertVertex(i);
+        }
+        for (int i = 0; i < 4; i++) {
+            for (int j = i + 1; j < 4; j++) {
+                graph.insertEdge(i, j, 1);
+            }
+        }
+
+        ((com.example.model.MyVertex<Integer>) graph.getVertexByKey(0)).setIsSupporting(false);
+        ((com.example.model.MyVertex<Integer>) graph.getVertexByKey(1)).setIsSupporting(true);
+        ((com.example.model.MyVertex<Integer>) graph.getVertexByKey(2)).setIsSupporting(true);
+        ((com.example.model.MyVertex<Integer>) graph.getVertexByKey(3)).setIsSupporting(true);
+
+        PrivateRulesBftAlgorithm algorithm = new PrivateRulesBftAlgorithm();
+        algorithm.loadEnvironment(graph, createSettings(0, 2, 2));
+
+        int steps = 0;
+        while (!algorithm.isFinished() && steps < 10) {
+            assertNotNull(algorithm.step());
+            steps++;
+        }
+
+        assertTrue(algorithm.isFinished());
+        assertTrue(graph.checkConsensus());
+        assertEquals(false, graph.getLoyalConsensusOpinion());
+    }
+
     private AlgorithmSettings createSettings(int f, int timeout, int maxRounds) {
         return createSettings(f, timeout, maxRounds, ProofMethodType.STARK);
     }

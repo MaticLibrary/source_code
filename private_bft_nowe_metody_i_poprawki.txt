@@ -1,0 +1,252 @@
+Dokumentacja zmian - STARK / Bulletproofs / poprawka szybkiej symulacji
+Data: 2026-04-17
+
+1. Po co powstal ten plik
+
+Ten plik opisuje dokladnie:
+- co zostalo dodane do aplikacji,
+- jak to dziala w kodzie,
+- co jest rzeczywista logika algorytmu,
+- a co jest tylko profilem / opisem metody dowodu w warstwie symulacyjnej.
+
+
+2. Co zostalo dodane
+
+2.1. Nowy wybor metody dowodu w Private BFT
+
+Dodano dwa warianty:
+- STARK
+- Bulletproofs
+
+W aplikacji sa one dostepne jako wybor w ustawieniach algorytmu:
+"BFT z regulami prywatnymi".
+
+
+2.2. Nowy enum z opisem metod
+
+Dodano plik:
+- src/main/java/com/example/algorithm/ProofMethodType.java
+
+Ten enum przechowuje:
+- nazwe metody,
+- opis do UI,
+- profil weryfikacji,
+- profil rozmiaru dowodu,
+- informacje o odpornosci kwantowej,
+- krotki dopisek do opisu kroku w panelu informacji.
+
+
+2.3. Rozszerzenie ustawien Private BFT
+
+Zmodyfikowano pliki:
+- src/main/java/com/example/controller/settings/PrivateBftSettingsController.java
+- src/main/resources/view/settings/privateBftSettingsView.fxml
+
+Dodano:
+- nowe pole "Metoda dowodu",
+- combobox z opcjami STARK / Bulletproofs,
+- opis pod spodem wyjasniajacy, kiedy warto uzyc danej metody.
+
+Wybrana opcja trafia do AlgorithmSettings pod kluczem:
+- proofMethod
+
+
+2.4. Podpiecie wybranej metody do symulacji
+
+Zmodyfikowano plik:
+- src/main/java/com/example/algorithm/PrivateRulesBftAlgorithm.java
+
+Dodano:
+- pole proofMethod,
+- odczyt proofMethod z ustawien podczas loadEnvironment(...),
+- dopisywanie tej informacji do StepReport.
+
+Do raportu trafia teraz:
+- dowod
+- weryfikacja
+- rozmiar_dowodu
+- odpornosc_kwantowa
+- profil_dowodu
+
+
+2.5. Pokazywanie metody w panelu informacji
+
+Zmodyfikowano plik:
+- src/main/java/com/example/engines/PrivateRulesBftInformationEngine.java
+
+Dodano:
+- nowe pozycje w panelu informacji,
+- dopisek do opisu kroku zalezny od STARK / Bulletproofs.
+
+
+2.6. Uzupelnienie dokumentacji w aplikacji
+
+Zmodyfikowano plik:
+- src/main/resources/view/documentationPages/helpPrivateBft.fxml
+
+Dodano opis:
+- czym jest STARK,
+- czym jest Bulletproofs,
+- kiedy ktory wariant ma sens,
+- co zmienia wybor profilu dowodu.
+
+
+2.7. Poprawka szybkiej symulacji
+
+Zmodyfikowano plik:
+- src/main/java/com/example/controller/SimulationController.java
+
+Wczesniej szybka symulacja:
+- tworzyla pelny graf,
+- losowala zdrajcow,
+- ale NIE losowala poczatkowych opinii.
+
+To powodowalo, ze wszystkie wezly startowaly z domyslnym:
+- isSupporting = true
+
+czyli praktycznie:
+- "atak".
+
+Przy 8 agentach i 2 zdrajcach dawalo to zwykle:
+- 6 lojalnych za atakiem,
+- 0 lojalnych za odwrotem.
+
+Po poprawce szybka symulacja:
+- tworzy pelny graf,
+- losuje poczatkowe opinie 50/50,
+- dopiero potem losuje zdrajcow,
+- uruchamia wybrany algorytm.
+
+To usuwa mylace wrazenie, ze algorytm "zawsze wybiera atak".
+
+
+2.8. Testy
+
+Zmodyfikowano / dodano:
+- src/test/java/com/example/algorithm/PrivateRulesBftAlgorithmTest.java
+- src/test/java/com/example/draw/OpinionGeneratorTest.java
+
+Dodano testy sprawdzajace:
+- czy wybrana metoda dowodu trafia do raportu,
+- czy algorytm potrafi dojsc do konsensusu "odwrot", a nie tylko "atak",
+- czy generator opinii faktycznie rozdziela startowe opinie zgodnie z oczekiwanym udzialem.
+
+
+3. Jak to dziala krok po kroku
+
+3.1. Wybor metody przez uzytkownika
+
+Uzytkownik:
+- wybiera "BFT z regulami prywatnymi",
+- wybiera w ustawieniach STARK albo Bulletproofs.
+
+Ta informacja jest zapisywana w proofMethod i przekazywana do algorytmu przy starcie symulacji.
+
+
+3.2. Dzialanie samego Private BFT
+
+Sam algorytm dalej dziala tak:
+
+1) Lider wysyla podpisana propozycje.
+2) Uczciwy wezel moze podpisac najwyzej jedna wartosc w rundzie.
+3) ECHO jest propagowane po grafie i musi miec slad podpisu lidera.
+4) Decyzja zapada dopiero po zebraniu quorum:
+   quorum = n - f
+5) Gdy nie ma quorum albo lider jest niespojny, uczciwy wezel nie wymusza sztucznej decyzji.
+6) Prywatne reguly nie zmieniaja decyzji, tylko moga podniesc ALARM.
+
+
+3.3. Co zmienia STARK / Bulletproofs
+
+W obecnej wersji aplikacji wybor STARK / Bulletproofs:
+- NIE zmienia quorum,
+- NIE zmienia propagacji wiadomosci,
+- NIE zmienia liczby rund,
+- NIE zmienia decyzji konsensusu,
+- NIE zmienia logiki podpisow w rdzeniu algorytmu.
+
+Wybor STARK / Bulletproofs zmienia obecnie:
+- opis w UI,
+- opis w dokumentacji,
+- informacje w StepReport,
+- interpretacje profilu dowodu w symulacji.
+
+
+4. Bardzo wazne ograniczenie
+
+To NIE jest pelna kryptograficzna implementacja:
+- STARK
+- ani Bulletproofs
+
+W praktyce oznacza to:
+- nie ma tu prawdziwego generatora dowodu STARK,
+- nie ma tu prawdziwego weryfikatora STARK,
+- nie ma tu prawdziwego dowodu Bulletproofs,
+- nie ma tu prawdziwej weryfikacji zakresow lub arytmetyki Bulletproofs.
+
+Obecny model traktuje STARK / Bulletproofs jako:
+- profil wyboru metody dowodu,
+- warstwe opisowa i raportowa,
+- element konfiguracji do symulacji koncepcyjnej.
+
+Rdzen komunikacji nadal opiera sie na:
+- podpisach cyfrowych w modelu algorytmu.
+
+
+5. Jak interpretowac te dwa profile
+
+5.1. STARK
+
+W aplikacji oznacza:
+- profil nastawiony na szybka weryfikacje bardzo duzych obliczen,
+- sensowny przy duzych partiach danych,
+- odpornosc kwantowa,
+- mniej istotny rozmiar dowodu.
+
+
+5.2. Bulletproofs
+
+W aplikacji oznacza:
+- profil nastawiony na bardzo maly rozmiar dowodu,
+- sensowny dla malych danych i ograniczonych urzadzen,
+- brak odpornosci kwantowej,
+- nacisk na oszczednosc przesylanych danych.
+
+
+6. Dlaczego wynik "6 atak / 0 obrona" byl mylacy
+
+Powod byl prosty:
+- szybki tryb nie losowal opinii startowych,
+- a MyVertex domyslnie startuje z true,
+- czyli kazdy lojalny wezel na starcie byl za atakiem.
+
+To oznacza, ze taki wynik nie dowodzil, ze algorytm dziala poprawnie.
+Pokazywal tylko, ze dane startowe byly stale ustawione na "atak".
+
+Po poprawce szybki tryb daje bardziej uczciwe dane wejsciowe.
+
+
+7. Co zostalo faktycznie sprawdzone
+
+Po zmianach sprawdzono:
+- ze projekt buduje sie i testy przechodza,
+- ze proofMethod jest widoczne w raportach,
+- ze algorytm nie jest "na sztywno" ustawiony na atak,
+- ze szybka symulacja nie startuje juz zawsze z ta sama opinia wszystkich lojalnych wezlow.
+
+
+8. Krotkie podsumowanie
+
+Dodano:
+- wybor STARK / Bulletproofs,
+- opisy i raportowanie tych metod,
+- dokumentacje w UI,
+- testy,
+- poprawke szybkiej symulacji.
+
+Najwazniejsza prawda techniczna:
+- STARK i Bulletproofs sa obecnie profilem symulacyjnym / raportowym,
+- a nie pelna implementacja kryptograficzna tych systemow dowodowych.
+
+Najwazniejsza poprawka praktyczna:
+- szybka symulacja nie startuje juz zawsze z samym "atak".
