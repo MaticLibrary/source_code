@@ -26,6 +26,7 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
     private int timeout = 1;
     private int sendElapsed = 0;
     private MyVertex<Integer> leader;
+    private ProofMethodType proofMethod = ProofMethodType.STARK;
 
     private final Map<MyVertex<Integer>, PrivateRuleType> rules = new HashMap<>();
     private final Map<MyVertex<Integer>, NodeState> states = new HashMap<>();
@@ -163,6 +164,9 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
             this.f = (int) settings.getSettings().getOrDefault("f", new com.example.settings.AlgorithmSetting<>("f", 0, Integer.class, v -> true)).getValue();
             this.timeout = (int) settings.getSettings().getOrDefault("timeout", new com.example.settings.AlgorithmSetting<>("timeout", 1, Integer.class, v -> true)).getValue();
             this.maxRounds = (int) settings.getSettings().getOrDefault("maxRounds", new com.example.settings.AlgorithmSetting<>("maxRounds", 5, Integer.class, v -> true)).getValue();
+            this.proofMethod = (ProofMethodType) settings.getSettings()
+                    .getOrDefault("proofMethod", new com.example.settings.AlgorithmSetting<>("proofMethod", ProofMethodType.STARK, ProofMethodType.class, v -> true))
+                    .getValue();
         }
 
         if (timeout < 2) {
@@ -184,6 +188,7 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
             report.getProperties().put("f", String.valueOf(f));
             report.getProperties().put("timeout", String.valueOf(timeout));
             report.getProperties().put("maks_rund", String.valueOf(maxRounds));
+            fillProofMethodProperties(report);
             isFinished.set(true);
             return report;
         }
@@ -454,6 +459,15 @@ public class PrivateRulesBftAlgorithm implements Algorithm {
         int totalRules = PrivateRuleType.values().length;
         report.getProperties().put("reguły", totalRules + " (przypisanie: ID mod " + totalRules + ")");
         report.getProperties().put("mapowanie_regul", ruleAssignmentSummary());
+        fillProofMethodProperties(report);
+    }
+
+    private void fillProofMethodProperties(StepReport report) {
+        report.getProperties().put("dowod", proofMethod.toString());
+        report.getProperties().put("weryfikacja", proofMethod.getVerificationProfile());
+        report.getProperties().put("rozmiar_dowodu", proofMethod.getProofSizeProfile());
+        report.getProperties().put("odpornosc_kwantowa", proofMethod.getQuantumResistanceProfile());
+        report.getProperties().put("profil_dowodu", proofMethod.getBestForProfile());
     }
 
     private void initializeKeys() {

@@ -7,6 +7,7 @@ import com.example.settings.AlgorithmSetting;
 import com.example.settings.AlgorithmSettings;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -71,14 +72,43 @@ class PrivateRulesBftAlgorithmTest {
         assertNotEquals("0", chooseReport.getProperties().get("konflikty_lidera"));
     }
 
+    @Test
+    void chosenProofMethodIsExposedInStepReport() {
+        MyGraph<Integer, Integer> graph = new MyGraph<>();
+        for (int i = 0; i < 4; i++) {
+            graph.insertVertex(i);
+        }
+        for (int i = 0; i < 4; i++) {
+            for (int j = i + 1; j < 4; j++) {
+                graph.insertEdge(i, j, 1);
+            }
+        }
+
+        PrivateRulesBftAlgorithm algorithm = new PrivateRulesBftAlgorithm();
+        algorithm.loadEnvironment(graph, createSettings(1, 2, 2, ProofMethodType.BULLETPROOFS));
+
+        StepReport report = algorithm.step();
+
+        assertNotNull(report);
+        assertEquals("Bulletproofs", report.getProperties().get("dowod"));
+        assertEquals("nie", report.getProperties().get("odpornosc_kwantowa"));
+    }
+
     private AlgorithmSettings createSettings(int f, int timeout, int maxRounds) {
+        return createSettings(f, timeout, maxRounds, ProofMethodType.STARK);
+    }
+
+    private AlgorithmSettings createSettings(int f, int timeout, int maxRounds, ProofMethodType proofMethod) {
         AlgorithmSettings settings = new AlgorithmSettings();
         AlgorithmSetting<Integer> fSetting = new AlgorithmSetting<>("f", f, Integer.class, value -> value >= 0);
         AlgorithmSetting<Integer> timeoutSetting = new AlgorithmSetting<>("timeout", timeout, Integer.class, value -> value > 0);
         AlgorithmSetting<Integer> roundsSetting = new AlgorithmSetting<>("maxRounds", maxRounds, Integer.class, value -> value > 0);
+        AlgorithmSetting<ProofMethodType> proofSetting =
+                new AlgorithmSetting<>("proofMethod", proofMethod, ProofMethodType.class, value -> value != null);
         settings.getSettings().put("f", fSetting);
         settings.getSettings().put("timeout", timeoutSetting);
         settings.getSettings().put("maxRounds", roundsSetting);
+        settings.getSettings().put("proofMethod", proofSetting);
         return settings;
     }
 }

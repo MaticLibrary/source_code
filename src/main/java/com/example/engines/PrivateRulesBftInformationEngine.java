@@ -1,6 +1,7 @@
 package com.example.engines;
 
 import com.example.algorithm.AlgorithmType;
+import com.example.algorithm.ProofMethodType;
 import com.example.algorithm.VertexRole;
 import com.example.algorithm.report.StepReport;
 import com.example.engines.printer.InformationPrinter;
@@ -32,6 +33,11 @@ public class PrivateRulesBftInformationEngine implements InformationEngine {
         result.put("lider", properties.getOrDefault("lider", "N/A"));
         result.put("f", properties.getOrDefault("f", "N/A"));
         result.put("timeout", properties.getOrDefault("timeout", "N/A"));
+        result.put("dowod", properties.getOrDefault("dowod", "N/A"));
+        result.put("weryfikacja", properties.getOrDefault("weryfikacja", "N/A"));
+        result.put("rozmiar dowodu", properties.getOrDefault("rozmiar_dowodu", "N/A"));
+        result.put("odpornosc kwantowa", properties.getOrDefault("odpornosc_kwantowa", "N/A"));
+        result.put("profil dowodu", properties.getOrDefault("profil_dowodu", "N/A"));
         result.put("alarmy", properties.getOrDefault("alarmy", "0"));
         result.put("quorum", properties.getOrDefault("quorum", "N/A"));
         result.put("decyzje", properties.getOrDefault("decyzje", "0/0"));
@@ -48,10 +54,19 @@ public class PrivateRulesBftInformationEngine implements InformationEngine {
     }
 
     private String generateDescription(StepReport stepReport) {
+        ProofMethodType proofMethod = parseProofMethod(stepReport.getProperties().get("dowod"));
+        String proofSuffix = proofMethod.getStepDescriptionSuffix();
         return switch (stepReport.getAlgorithmPhase()) {
-            case SEND -> "PROPOSAL/ECHO: lider rozsyla podpisana propozycje do swoich sasiadow, a uczciwy wezel podpisuje co najwyzej jedna wartosc i przekazuje ja dalej po krawedziach grafu.";
-            case CHOOSE -> "Decyzja: wartosc jest przyjmowana dopiero po zebraniu certyfikatu quorum (n-f podpisow). Reguly prywatne oceniaja jakosc dowodu i moga zglosic ALARM.";
+            case SEND -> "PROPOSAL/ECHO: lider rozsyla podpisana propozycje do swoich sasiadow, a uczciwy wezel podpisuje co najwyzej jedna wartosc i przekazuje ja dalej po krawedziach grafu." + proofSuffix;
+            case CHOOSE -> "Decyzja: wartosc jest przyjmowana dopiero po zebraniu certyfikatu quorum (n-f podpisow). Reguly prywatne oceniaja jakosc dowodu i moga zglosic ALARM." + proofSuffix;
             default -> "Nieznana faza.";
         };
+    }
+
+    private ProofMethodType parseProofMethod(String value) {
+        if (ProofMethodType.BULLETPROOFS.toString().equals(value)) {
+            return ProofMethodType.BULLETPROOFS;
+        }
+        return ProofMethodType.STARK;
     }
 }

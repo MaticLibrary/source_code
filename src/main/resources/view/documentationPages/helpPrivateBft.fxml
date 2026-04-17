@@ -6,7 +6,7 @@
 
 <VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
     <Label text="BFT z regulami prywatnymi" styleClass="docs-page-title"/>
-    <Label text="Podpisy cyfrowe, quorum i prywatne polityki alarmowe." styleClass="docs-page-lead"/>
+    <Label text="Podpisy cyfrowe, quorum, prywatne polityki alarmowe i wybor profilu dowodu." styleClass="docs-page-lead"/>
     <TextArea editable="false" prefHeight="340.0" prefWidth="360.0" wrapText="true"
               styleClass="docs-text"
               text="Model:
@@ -20,8 +20,13 @@
 Wazne:
 - topologia grafu ma znaczenie, bo wiadomosci ida po krawedziach,
 - wiekszy timeout pozwala dotrzec wiadomosci dalej w rzadkich grafach,
-- mapowanie regul zalezy od ID mod liczba_regul.
+- mapowanie regul zalezy od ID mod liczba_regul,
+- profil dowodu nie zmienia quorum, ale pomaga dobrac sposob prezentacji i interpretacji weryfikacji.
+
+Metody dowodu:
+- STARK: dla bardzo duzych obliczen i szybkiej weryfikacji; odporny na komputery kwantowe, ale zwykle ma wiekszy dowod.
+- Bulletproofs: dla malych danych i bardzo malego dowodu; dobry np. dla zakresow kwot lub urzadzen mobilnych, ale bez odpornosci kwantowej.
 
 Kiedy wybrac:
-Gdy chcesz pokazac polaczenie podpisow cyfrowych, propagacji po grafie i lokalnych polityk alarmowych."/>
+Gdy chcesz pokazac polaczenie podpisow cyfrowych, propagacji po grafie, lokalnych polityk alarmowych oraz dobrac profil dowodu do charakteru danych."/>
 </VBox>
