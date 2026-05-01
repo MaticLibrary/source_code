@@ -15,6 +15,9 @@ public class InformationEngineFactory {
             case PBFT -> {
                 return new PBFTInformationEngine(informationPrinter);
             }
+            case ZKP -> {
+                return new ZkpInformationEngine(informationPrinter);
+            }
             case PRIVATE_BFT -> {
                 return new PrivateRulesBftInformationEngine(informationPrinter);
             }

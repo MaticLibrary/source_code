@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <Label text="Algorytm ZKP" styleClass="docs-page-title"/>
+    <Label text="Prawdziwy dowod wiedzy dla glosu zgodnego z wczesniejszym zobowiazaniem." styleClass="docs-page-lead"/>
+    <TextArea editable="false" prefHeight="340.0" prefWidth="360.0" wrapText="true"
+              styleClass="docs-text"
+              text="Model:
+1) Kazdy wezel tworzy zobowiazanie Pedersena do swojego prywatnego glosu.
+2) Przy wysylce ujawnia glos i dodaje nieinteraktywny dowod Schnorra (Fiat-Shamir), ze zna otwarcie tego zobowiazania.
+3) Odbiorca liczy tylko glosy z poprawnym ZKP.
+4) Zmiana glosu po zobowiazaniu powoduje niewazny proof i taki glos jest odrzucany.
+5) Decyzja zapada dopiero po zebraniu quorum poprawnie zweryfikowanych glosow.
+
+Wazne:
+- to jest prawdziwy mechanizm ZKP, a nie sam profil opisowy,
+- gwarantuje spojnosc glosu z wczesniejszym zobowiazaniem,
+- nie gwarantuje, ze sam pierwotny glos byl 'dobry' lub korzystny,
+- model konsensusu pozostaje dydaktyczny: pokazuje, jak ZKP eliminuje klamstwo o oddanym glosie.
+
+Kiedy wybrac:
+Gdy chcesz pokazac, ze agent nie moze zmienic ujawnionego glosu po zlozeniu ukrytego zobowiazania bez zlamania dowodu kryptograficznego."/>
+</VBox>

@@ -37,7 +37,8 @@ public class DocumentationController {
         pageLocations.put(1, "/view/documentationPages/helpLamport.fxml");
         pageLocations.put(2, "/view/documentationPages/helpKing.fxml");
         pageLocations.put(3, "/view/documentationPages/helpPBFT.fxml");
-        pageLocations.put(4, "/view/documentationPages/helpPrivateBft.fxml");
+        pageLocations.put(4, "/view/documentationPages/helpZkp.fxml");
+        pageLocations.put(5, "/view/documentationPages/helpPrivateBft.fxml");
     }
 
     private void setScene(int index, Pane page) {
@@ -97,7 +98,8 @@ public class DocumentationController {
             case LAMPORT -> 1;
             case KING -> 2;
             case PBFT -> 3;
-            case PRIVATE_BFT -> 4;
+            case ZKP -> 4;
+            case PRIVATE_BFT -> 5;
         };
         openDocumentation(index);
     }

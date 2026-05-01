@@ -59,6 +59,7 @@
         <fx:include fx:id="lamportSettings" source="settings/lamportSettingsView.fxml"/>
         <fx:include fx:id="kingSettings" source="settings/kingSettingsView.fxml"/>
         <fx:include fx:id="PBFTSettings" source="settings/pbftSettingsView.fxml"/>
+        <fx:include fx:id="zkpSettings" source="settings/zkpSettingsView.fxml"/>
         <fx:include fx:id="privateBftSettings" source="settings/privateBftSettingsView.fxml"/>
 
         <Label text="Prędkość animacji" styleClass="section-label"/>

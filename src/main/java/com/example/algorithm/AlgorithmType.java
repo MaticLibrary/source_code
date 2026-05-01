@@ -6,6 +6,7 @@ public enum AlgorithmType {
     LAMPORT,
     KING,
     PBFT,
+    ZKP,
     PRIVATE_BFT;
 
     @Override
@@ -14,6 +15,7 @@ public enum AlgorithmType {
             case LAMPORT -> "Lamport";
             case KING -> "Kr\u00f3l";
             case PBFT -> "PBFT";
+            case ZKP -> "ZKP";
             case PRIVATE_BFT -> "BFT z regu\u0142ami prywatnymi";
         };
     }
@@ -23,6 +25,7 @@ public enum AlgorithmType {
             case LAMPORT -> {return new LamportIterAlgorithm();}
             case KING -> {return new KingAlgorithm();}
             case PBFT -> {return new PBFTModel();}
+            case ZKP -> {return new ZkpConsensusAlgorithm();}
             case PRIVATE_BFT -> {return new PrivateRulesBftAlgorithm();}
             default -> throw new NotImplementedException(this.toString() + " algorithm not implemented");
         }

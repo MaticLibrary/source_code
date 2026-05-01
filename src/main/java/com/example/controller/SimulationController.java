@@ -13,6 +13,7 @@ import com.example.controller.settings.AlgorithmSettingsController;
 import com.example.controller.settings.KingSettingsController;
 import com.example.controller.settings.LamportSettingsController;
 import com.example.controller.settings.PrivateBftSettingsController;
+import com.example.controller.settings.ZkpSettingsController;
 import com.example.controller.settings.pbftSettingsController;
 import com.example.engines.InformationEngineFactory;
 import com.example.model.MyGraph;
@@ -59,6 +60,8 @@ public class SimulationController {
     private KingSettingsController kingSettingsController;
     @FXML
     private pbftSettingsController PBFTSettingsController;
+    @FXML
+    private ZkpSettingsController zkpSettingsController;
     @FXML
     private PrivateBftSettingsController privateBftSettingsController;
     @FXML
@@ -152,6 +155,7 @@ public class SimulationController {
         lamportSettingsController.adjustSettingsConditions(graphController.getGraph());
         kingSettingsController.adjustSettingsConditions(graphController.getGraph());
         PBFTSettingsController.adjustSettingsConditions(graphController.getGraph());
+        zkpSettingsController.adjustSettingsConditions(graphController.getGraph());
         privateBftSettingsController.adjustSettingsConditions(graphController.getGraph());
     }
 
@@ -334,6 +338,9 @@ public class SimulationController {
             case PBFT -> {
                 return PBFTSettingsController;
             }
+            case ZKP -> {
+                return zkpSettingsController;
+            }
             case PRIVATE_BFT -> {
                 return privateBftSettingsController;
             }
@@ -364,6 +371,7 @@ public class SimulationController {
         hideAlgorithmSettings(AlgorithmType.LAMPORT);
         hideAlgorithmSettings(AlgorithmType.KING);
         hideAlgorithmSettings(AlgorithmType.PBFT);
+        hideAlgorithmSettings(AlgorithmType.ZKP);
         hideAlgorithmSettings(AlgorithmType.PRIVATE_BFT);
     }
 
@@ -431,7 +439,11 @@ public class SimulationController {
                     .map(entry -> entry.getKey().element().toString())
                     .toList();
             if (!alarms.isEmpty()) {
-                String alarmMessage = "ALARM: polityka prywatna wykryla problem z dowodem lub konfliktem lidera u wezlow " + String.join(", ", alarms) + ".";
+                String reason = report.getProperties().getOrDefault("alarm_reason", "Wykryto problem z dowodem lub warunkami decyzji");
+                if (!reason.endsWith(".")) {
+                    reason = reason + ".";
+                }
+                String alarmMessage = reason + " Wezly: " + String.join(", ", alarms) + ".";
                 loggerController.addItem("[ALARM] " + alarmMessage);
                 lastOperation = alarmMessage;
             }

@@ -75,6 +75,7 @@ public class AppController {
                 AlgorithmType.LAMPORT,
                 AlgorithmType.KING,
                 AlgorithmType.PBFT,
+                AlgorithmType.ZKP,
                 AlgorithmType.PRIVATE_BFT
         ));
         simulationInitialized = true;

@@ -28,6 +28,7 @@
                 <Label text="Algorytm Lamporta" styleClass="docs-item"/>
                 <Label text="Algorytm Króla" styleClass="docs-item"/>
                 <Label text="Algorytm PBFT" styleClass="docs-item"/>
+                <Label text="Algorytm ZKP" styleClass="docs-item"/>
                 <Label text="BFT z regułami prywatnymi" styleClass="docs-item"/>
             </ListView>
         </VBox>
