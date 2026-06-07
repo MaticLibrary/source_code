@@ -19,114 +19,150 @@ public class GraphEditController {
 
     private final Map<ApplicationState, List<Button>> buttons = new HashMap<>();
 
-    @FXML
-    private Button vertexButton;
-    @FXML
-    private Button edgeButton;
-    @FXML
-    private Button deleteButton;
-    @FXML
-    private Button noneButton;
-    @FXML
-    private ToggleButton simulateButton;
-    @FXML
-    private Button undoButton;
-    @FXML
-    private Button redoButton;
-    @FXML
-    private Button startButton;
-    @FXML
-    private Button nextStepButton;
-    @FXML
-    private Button liveButton;
-    @FXML
-    private Button instantFinishButton;
-    @FXML
-    private Button pauseButton;
-    @FXML
-    public Button stopButton;
-    @FXML
-    public Button traitorSettings;
+    @FXML private Button vertexButton;
+    @FXML private Button edgeButton;
+    @FXML private Button deleteButton;
+    @FXML private Button noneButton;
+
+    @FXML private ToggleButton simulateButton;
+
+    @FXML private Button undoButton;
+    @FXML private Button redoButton;
+
+    @FXML private Button startButton;
+    @FXML private Button nextStepButton;
+    @FXML private Button liveButton;
+    @FXML private Button instantFinishButton;
+    @FXML private Button pauseButton;
+    @FXML public Button stopButton;
+
+    @FXML public Button traitorSettings;
 
     private DrawMenuController drawMenuController;
-    private SimulationMenuController simulationMenuController;
     private SimulationController simulationController;
+    private SimulationMenuController simulationMenuController;
 
-    private void initializeDrawingButtons() {
-        vertexButton.setOnAction(e -> drawMenuController.selectMode(DrawMode.VERTEX));
-        edgeButton.setOnAction(e -> drawMenuController.selectMode(DrawMode.EDGE));
-        deleteButton.setOnAction(e -> drawMenuController.selectMode(DrawMode.DELETE));
-        noneButton.setOnAction(e -> drawMenuController.selectMode(DrawMode.NONE));
-        undoButton.setOnAction(e -> drawMenuController.undo());
-        redoButton.setOnAction(e -> drawMenuController.redo());
+    @FXML
+    public void initialize() {
+        initializeAlwaysDisplayedButtons();
+    }
+
+    // ===================== DRAW =====================
+
+    private void initDrawButtons() {
+        vertexButton.setOnAction(e -> safe(() ->
+                drawMenuController.selectMode(DrawMode.VERTEX)));
+
+        edgeButton.setOnAction(e -> safe(() ->
+                drawMenuController.selectMode(DrawMode.EDGE)));
+
+        deleteButton.setOnAction(e -> safe(() ->
+                drawMenuController.selectMode(DrawMode.DELETE)));
+
+        noneButton.setOnAction(e -> safe(() ->
+                drawMenuController.selectMode(DrawMode.NONE)));
+
+        undoButton.setOnAction(e -> safe(drawMenuController::undo));
+        redoButton.setOnAction(e -> safe(drawMenuController::redo));
+
         buttons.put(ApplicationState.DRAWING,
                 List.of(vertexButton, edgeButton, deleteButton, noneButton, undoButton, redoButton));
     }
 
-    private void initializeSimulationButtons() {
-        startButton.setOnAction(e -> simulationMenuController.startItem.fire());
-        nextStepButton.setOnAction(e -> simulationMenuController.nextStepItem.fire());
-        liveButton.setOnAction(e -> simulationMenuController.liveItem.fire());
-        instantFinishButton.setOnAction(e -> simulationMenuController.instantFinishItem.fire());
-        pauseButton.setOnAction(e -> simulationMenuController.pauseItem.fire());
-        stopButton.setOnAction(e -> simulationMenuController.stopItem.fire());
-        traitorSettings.setOnAction(e ->
-        {
-            simulationMenuController.traitorSettings.fire();
-            traitorSettings.setText(TraitorSettings.isTraitorsAlwaysLie()
-                    ? "[Tryb] Zdrajcy zawsze kłamią"
-                    : "[Tryb] Zdrajcy kłamią losowo");
-        });
-        traitorSettings.setText(TraitorSettings.isTraitorsAlwaysLie()
-                ? "[Tryb] Zdrajcy zawsze kłamią"
-                : "[Tryb] Zdrajcy kłamią losowo");
+    // ===================== SIMULATION =====================
+
+    private void initSimulationButtons() {
+
+        startButton.setOnAction(e -> safe(() -> simulationController.initSimulation()));
+        nextStepButton.setOnAction(e -> safe(() -> simulationController.doStep()));
+        liveButton.setOnAction(e -> safe(() -> simulationController.live()));
+        instantFinishButton.setOnAction(e -> safe(() -> simulationController.instantFinish()));
+        pauseButton.setOnAction(e -> safe(() -> simulationController.pause()));
+        stopButton.setOnAction(e -> safe(() -> simulationController.stop()));
+
+        traitorSettings.setOnAction(e -> safe(() -> {
+            TraitorSettings.setTraitorsAlwaysLie(!TraitorSettings.isTraitorsAlwaysLie());
+
+            traitorSettings.setText(
+                    TraitorSettings.isTraitorsAlwaysLie()
+                            ? "[Tryb] Zdrajcy zawsze kłamią"
+                            : "[Tryb] Zdrajcy kłamią losowo"
+            );
+        }));
+
+        traitorSettings.setText(
+                TraitorSettings.isTraitorsAlwaysLie()
+                        ? "[Tryb] Zdrajcy zawsze kłamią"
+                        : "[Tryb] Zdrajcy kłamią losowo"
+        );
+
         buttons.put(ApplicationState.SIMULATING,
-                List.of(traitorSettings, startButton, nextStepButton, liveButton, instantFinishButton, pauseButton, stopButton));
+                List.of(traitorSettings, startButton, nextStepButton,
+                        liveButton, instantFinishButton, pauseButton, stopButton));
     }
+
+    // ===================== ALWAYS =====================
 
     private void initializeAlwaysDisplayedButtons() {
-        simulateButton.setOnAction(e -> simulationMenuController.simulateItem.fire());
+        simulateButton.setOnAction(e ->
+                safe(() -> simulationMenuController.simulateItem.fire())
+        );
     }
 
-    @FXML
-    public void initialize() {
-        initializeDrawingButtons();
-        initializeSimulationButtons();
-        initializeAlwaysDisplayedButtons();
-    }
+    // ===================== INJECTIONS =====================
 
     public void setDrawMenuController(DrawMenuController controller) {
-        drawMenuController = controller;
-        undoButton.disableProperty().bind(drawMenuController.undoItemDisableProperty());
-        redoButton.disableProperty().bind(drawMenuController.redoItemDisableProperty());
+        this.drawMenuController = controller;
+        initDrawButtons();
+
+        undoButton.disableProperty().bind(controller.undoItemDisableProperty());
+        redoButton.disableProperty().bind(controller.redoItemDisableProperty());
     }
 
     public void setSimulationMenuController(SimulationMenuController controller) {
-        simulationMenuController = controller;
+        this.simulationMenuController = controller;
+        initSimulationButtons();
+
         simulateButton.selectedProperty().unbind();
-        simulationMenuController.getAppController().getApplicationStateProperty()
-                .addListener(((observable, oldValue, newValue) -> simulateButton.setSelected(newValue == ApplicationState.SIMULATING)));
+        controller.getAppController().getApplicationStateProperty()
+                .addListener((obs, oldV, newV) ->
+                        simulateButton.setSelected(newV == ApplicationState.SIMULATING));
     }
 
-    public void setSimulationController(SimulationController simulationController) {
-        this.simulationController = simulationController;
+    public void setSimulationController(SimulationController controller) {
+        this.simulationController = controller;
         bindButtons();
     }
 
-    public void setEnabled(boolean enabled, ApplicationState applicationState) {
-        buttons.get(applicationState).forEach(button -> {
-            button.setManaged(enabled);
-            button.setVisible(enabled);
+    // ===================== ENABLE SWITCH =====================
+
+    public void setEnabled(boolean enabled, ApplicationState state) {
+        if (!buttons.containsKey(state)) return;
+
+        buttons.get(state).forEach(b -> {
+            b.setManaged(enabled);
+            b.setVisible(enabled);
         });
     }
 
+    // ===================== BINDINGS =====================
+
     public void bindButtons() {
+        if (simulationController == null) return;
+
         startButton.disableProperty().bind(simulationController.getStartDisabledProperty());
         nextStepButton.disableProperty().bind(simulationController.getNextStepDisabledProperty());
         liveButton.disableProperty().bind(simulationController.getLiveDisabledProperty());
         instantFinishButton.disableProperty().bind(simulationController.getInstantFinishDisabledProperty());
         pauseButton.disableProperty().bind(simulationController.getPauseDisabledProperty());
         stopButton.disableProperty().bind(simulationController.getStopDisableProperty());
+
         traitorSettings.disableProperty().bind(simulationController.getStartDisabledProperty());
+    }
+
+    // ===================== SAFE RUN =====================
+
+    private void safe(Runnable r) {
+        if (r != null) r.run();
     }
 }
